@@ -35,18 +35,24 @@
             this.btn_StockRepGenRep = new System.Windows.Forms.Button();
             this.btn_StockRepCancel = new System.Windows.Forms.Button();
             this.btn_StockRepExit = new System.Windows.Forms.Button();
+            this.gbDisplayStockReport = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtItemAmount = new System.Windows.Forms.TextBox();
+            this.txtItemName = new System.Windows.Forms.TextBox();
+            this.gbDisplayStockReport.SuspendLayout();
             this.SuspendLayout();
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(181, 77);
+            this.dateTimePicker1.Location = new System.Drawing.Point(181, 40);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(181, 134);
+            this.dateTimePicker2.Location = new System.Drawing.Point(181, 91);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 1;
@@ -54,7 +60,7 @@
             // lbl_StockRepStartDate
             // 
             this.lbl_StockRepStartDate.AutoSize = true;
-            this.lbl_StockRepStartDate.Location = new System.Drawing.Point(43, 84);
+            this.lbl_StockRepStartDate.Location = new System.Drawing.Point(43, 46);
             this.lbl_StockRepStartDate.Name = "lbl_StockRepStartDate";
             this.lbl_StockRepStartDate.Size = new System.Drawing.Size(55, 13);
             this.lbl_StockRepStartDate.TabIndex = 2;
@@ -63,7 +69,7 @@
             // lbl_StockReportEndDate
             // 
             this.lbl_StockReportEndDate.AutoSize = true;
-            this.lbl_StockReportEndDate.Location = new System.Drawing.Point(46, 140);
+            this.lbl_StockReportEndDate.Location = new System.Drawing.Point(46, 91);
             this.lbl_StockReportEndDate.Name = "lbl_StockReportEndDate";
             this.lbl_StockReportEndDate.Size = new System.Drawing.Size(52, 13);
             this.lbl_StockReportEndDate.TabIndex = 3;
@@ -71,7 +77,7 @@
             // 
             // btn_StockRepGenRep
             // 
-            this.btn_StockRepGenRep.Location = new System.Drawing.Point(46, 229);
+            this.btn_StockRepGenRep.Location = new System.Drawing.Point(46, 279);
             this.btn_StockRepGenRep.Name = "btn_StockRepGenRep";
             this.btn_StockRepGenRep.Size = new System.Drawing.Size(121, 23);
             this.btn_StockRepGenRep.TabIndex = 4;
@@ -80,7 +86,7 @@
             // 
             // btn_StockRepCancel
             // 
-            this.btn_StockRepCancel.Location = new System.Drawing.Point(200, 228);
+            this.btn_StockRepCancel.Location = new System.Drawing.Point(216, 279);
             this.btn_StockRepCancel.Name = "btn_StockRepCancel";
             this.btn_StockRepCancel.Size = new System.Drawing.Size(75, 23);
             this.btn_StockRepCancel.TabIndex = 5;
@@ -89,7 +95,7 @@
             // 
             // btn_StockRepExit
             // 
-            this.btn_StockRepExit.Location = new System.Drawing.Point(334, 228);
+            this.btn_StockRepExit.Location = new System.Drawing.Point(346, 279);
             this.btn_StockRepExit.Name = "btn_StockRepExit";
             this.btn_StockRepExit.Size = new System.Drawing.Size(75, 23);
             this.btn_StockRepExit.TabIndex = 6;
@@ -97,11 +103,57 @@
             this.btn_StockRepExit.UseVisualStyleBackColor = true;
             this.btn_StockRepExit.Click += new System.EventHandler(this.Btn_StockRepExit_Click);
             // 
+            // gbDisplayStockReport
+            // 
+            this.gbDisplayStockReport.Controls.Add(this.txtItemName);
+            this.gbDisplayStockReport.Controls.Add(this.txtItemAmount);
+            this.gbDisplayStockReport.Controls.Add(this.label2);
+            this.gbDisplayStockReport.Controls.Add(this.label1);
+            this.gbDisplayStockReport.Location = new System.Drawing.Point(46, 144);
+            this.gbDisplayStockReport.Name = "gbDisplayStockReport";
+            this.gbDisplayStockReport.Size = new System.Drawing.Size(375, 100);
+            this.gbDisplayStockReport.TabIndex = 7;
+            this.gbDisplayStockReport.TabStop = false;
+            this.gbDisplayStockReport.Text = "Display";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Item Amount";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(167, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Item Name";
+            // 
+            // txtItemAmount
+            // 
+            this.txtItemAmount.Location = new System.Drawing.Point(21, 60);
+            this.txtItemAmount.Name = "txtItemAmount";
+            this.txtItemAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtItemAmount.TabIndex = 2;
+            // 
+            // txtItemName
+            // 
+            this.txtItemName.Location = new System.Drawing.Point(170, 60);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.Size = new System.Drawing.Size(100, 20);
+            this.txtItemName.TabIndex = 3;
+            // 
             // StockReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(554, 334);
+            this.Controls.Add(this.gbDisplayStockReport);
             this.Controls.Add(this.btn_StockRepExit);
             this.Controls.Add(this.btn_StockRepCancel);
             this.Controls.Add(this.btn_StockRepGenRep);
@@ -109,9 +161,13 @@
             this.Controls.Add(this.lbl_StockRepStartDate);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "StockReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockReport";
+            this.gbDisplayStockReport.ResumeLayout(false);
+            this.gbDisplayStockReport.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +182,10 @@
         private System.Windows.Forms.Button btn_StockRepGenRep;
         private System.Windows.Forms.Button btn_StockRepCancel;
         private System.Windows.Forms.Button btn_StockRepExit;
+        private System.Windows.Forms.GroupBox gbDisplayStockReport;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtItemName;
+        private System.Windows.Forms.TextBox txtItemAmount;
     }
 }
