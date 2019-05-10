@@ -53,7 +53,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(190, 160);
+            this.lblPassword.Location = new System.Drawing.Point(190, 199);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(115, 33);
             this.lblPassword.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // txtboxPassword
             // 
-            this.txtboxPassword.Location = new System.Drawing.Point(365, 167);
+            this.txtboxPassword.Location = new System.Drawing.Point(365, 206);
             this.txtboxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
