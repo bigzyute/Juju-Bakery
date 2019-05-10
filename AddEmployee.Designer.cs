@@ -61,6 +61,12 @@
             this.btnEmpExit = new System.Windows.Forms.Button();
             this.lblEmpID = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.labelRequired = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.gbEmpPersonal.SuspendLayout();
             this.groupBoxMaritalStatus.SuspendLayout();
             this.groupBoxGender.SuspendLayout();
@@ -69,6 +75,11 @@
             // 
             // gbEmpPersonal
             // 
+            this.gbEmpPersonal.Controls.Add(this.label4);
+            this.gbEmpPersonal.Controls.Add(this.label3);
+            this.gbEmpPersonal.Controls.Add(this.label2);
+            this.gbEmpPersonal.Controls.Add(this.label1);
+            this.gbEmpPersonal.Controls.Add(this.labelRequired);
             this.gbEmpPersonal.Controls.Add(this.groupBoxMaritalStatus);
             this.gbEmpPersonal.Controls.Add(this.groupBoxGender);
             this.gbEmpPersonal.Controls.Add(this.txtEmpFname);
@@ -83,7 +94,7 @@
             this.gbEmpPersonal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEmpPersonal.Name = "gbEmpPersonal";
             this.gbEmpPersonal.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbEmpPersonal.Size = new System.Drawing.Size(388, 342);
+            this.gbEmpPersonal.Size = new System.Drawing.Size(401, 342);
             this.gbEmpPersonal.TabIndex = 0;
             this.gbEmpPersonal.TabStop = false;
             this.gbEmpPersonal.Text = "Personal Info";
@@ -94,9 +105,9 @@
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpSingle);
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpDivorced);
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpWidowed);
-            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(1, 232);
+            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(12, 232);
             this.groupBoxMaritalStatus.Name = "groupBoxMaritalStatus";
-            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(387, 66);
+            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(364, 66);
             this.groupBoxMaritalStatus.TabIndex = 15;
             this.groupBoxMaritalStatus.TabStop = false;
             this.groupBoxMaritalStatus.Text = "Marital Status";
@@ -140,7 +151,7 @@
             // rbEmpWidowed
             // 
             this.rbEmpWidowed.AutoSize = true;
-            this.rbEmpWidowed.Location = new System.Drawing.Point(281, 25);
+            this.rbEmpWidowed.Location = new System.Drawing.Point(273, 25);
             this.rbEmpWidowed.Margin = new System.Windows.Forms.Padding(7);
             this.rbEmpWidowed.Name = "rbEmpWidowed";
             this.rbEmpWidowed.Size = new System.Drawing.Size(86, 21);
@@ -153,9 +164,9 @@
             // 
             this.groupBoxGender.Controls.Add(this.rbEmpMale);
             this.groupBoxGender.Controls.Add(this.rbEmpFemale);
-            this.groupBoxGender.Location = new System.Drawing.Point(0, 170);
+            this.groupBoxGender.Location = new System.Drawing.Point(12, 170);
             this.groupBoxGender.Name = "groupBoxGender";
-            this.groupBoxGender.Size = new System.Drawing.Size(388, 56);
+            this.groupBoxGender.Size = new System.Drawing.Size(363, 56);
             this.groupBoxGender.TabIndex = 15;
             this.groupBoxGender.TabStop = false;
             this.groupBoxGender.Text = "Gender";
@@ -299,6 +310,7 @@
             // 
             // gbEmpAddress
             // 
+            this.gbEmpAddress.Controls.Add(this.label5);
             this.gbEmpAddress.Controls.Add(this.textBox5);
             this.gbEmpAddress.Controls.Add(this.textBox4);
             this.gbEmpAddress.Controls.Add(this.textBox3);
@@ -313,7 +325,7 @@
             this.gbEmpAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEmpAddress.Name = "gbEmpAddress";
             this.gbEmpAddress.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbEmpAddress.Size = new System.Drawing.Size(327, 226);
+            this.gbEmpAddress.Size = new System.Drawing.Size(337, 226);
             this.gbEmpAddress.TabIndex = 12;
             this.gbEmpAddress.TabStop = false;
             this.gbEmpAddress.Text = "Address Info";
@@ -408,6 +420,72 @@
             this.textBox6.Size = new System.Drawing.Size(100, 22);
             this.textBox6.TabIndex = 15;
             // 
+            // labelRequired
+            // 
+            this.labelRequired.AutoSize = true;
+            this.labelRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRequired.ForeColor = System.Drawing.Color.Red;
+            this.labelRequired.Location = new System.Drawing.Point(381, 33);
+            this.labelRequired.Name = "labelRequired";
+            this.labelRequired.Size = new System.Drawing.Size(14, 17);
+            this.labelRequired.TabIndex = 16;
+            this.labelRequired.Text = "*";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(381, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(381, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(381, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 17);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "*";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(381, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 17);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "*";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(312, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 17);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "*";
+            // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -473,5 +551,11 @@
         private System.Windows.Forms.GroupBox groupBoxMaritalStatus;
         private System.Windows.Forms.GroupBox groupBoxGender;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelRequired;
+        private System.Windows.Forms.Label label5;
     }
 }

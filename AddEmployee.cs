@@ -28,20 +28,14 @@ namespace LoginScrn
         private void BtnEmpAdd_Click(object sender, EventArgs e)
         {
             //Gender validation and assignment
-            if (rbEmpFemale.Checked == true)
+            if (string.IsNullOrWhiteSpace(txtEmpFname.Text) || string.IsNullOrWhiteSpace(txtEmpLname.Text))
             {
-                char gender = 'f';
-            } else if(rbEmpMale.Checked == true)
-            {
-                char gender = 'm';
+                MessageBox.Show("Please complete the required feilds", "Name Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
+            else if (rbEmpFemale.Checked == false && rbEmpMale.Checked == false)
             {
-                DialogResult result = MessageBox.Show("Please select a gender.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            //Marital Status validation and assignment
-            if (rbEmpSingle.Checked == true)
+                MessageBox.Show("Please select a gender.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else if (rbEmpSingle.Checked == true)
             {
                 string status = "single";
             } else if (rbEmpMarried.Checked == true)
