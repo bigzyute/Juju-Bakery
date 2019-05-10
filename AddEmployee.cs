@@ -27,6 +27,8 @@ namespace LoginScrn
 
         private void BtnEmpAdd_Click(object sender, EventArgs e)
         {
+            char gender = 'm';
+            string mStatus = "single";
             //Gender validation and assignment
             if (string.IsNullOrWhiteSpace(txtEmpFname.Text) || string.IsNullOrWhiteSpace(txtEmpLname.Text))
             {
@@ -35,27 +37,42 @@ namespace LoginScrn
             else if (rbEmpFemale.Checked == false && rbEmpMale.Checked == false)
             {
                 MessageBox.Show("Please select a gender.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else if (rbEmpSingle.Checked == true)
+            } else if (rbEmpSingle.Checked == false || rbEmpMarried.Checked == false || rbEmpWidowed.Checked == false ||
+                rbEmpDivorced.Checked == false)
             {
-                string status = "single";
-            } else if (rbEmpMarried.Checked == true)
+                MessageBox.Show("Please select a Marital Status.", "Marital Status Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else if (string.IsNullOrWhiteSpace(txtBoxAddressTown.Text))
             {
-                string status = "married";
-            } else if (rbEmpWidowed.Checked == true)
+                MessageBox.Show("An address must be selected.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else if (rbEmpFemale.Checked == true)
             {
-                string status = "widowed";
-            } else if (rbEmpDivorced.Checked == true)
-            {
-                string status = "divorced";
+                gender = 'f';
             } else
             {
-                MessageBox.Show("Please select a Marital Status", "Marital Status Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                gender = 'm';
+            }
+
+            if (rbEmpSingle.Checked == true)
+            {
+                mStatus = "single";
+            } else if (rbEmpMarried.Checked == true)
+            {
+                mStatus = "married";
+            }
+            else if (rbEmpWidowed.Checked == true)
+            {
+                mStatus = "widowed";
+            }
+            else
+            {
+                mStatus = "divorced";
             }
 
             /*using(SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Employee VALUES('"+txtEmpFname+"', '"+txtEmpMidName+"', '"+txtEmpLname+"', '"
-                    +dateTimePickerAddEmp+"', '"+gender+"')";
+                string query = "INSERT INTO Employee VALUES('"+txtEmpFname.Text+"', '"+txtEmpMidName.Text+"', '"+txtEmpLname.Text+"', '"
+                    +dateTimePickerAddEmp+"', '"+gender+"', '"+mStatus+"', '"+txtBoxAddressTown.Text+"', '"+txtBoxAddressPoBox.Text+"', '"
+                    +txtBoxAddressParish.Text+"', )";
                 connection.Open();
                 SqlCommand cmd = new SqlCommand();
             }*/
