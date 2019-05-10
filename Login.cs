@@ -36,6 +36,7 @@ namespace LoginScrn
             adapter.Fill(dataTable);
             if (dataTable.Rows.Count==1)
             {
+                String  name ="hello";
                 Main objM = new Main();
                 objM.Show();
                 this.Hide();
