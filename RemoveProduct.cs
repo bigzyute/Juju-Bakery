@@ -34,8 +34,8 @@ namespace LoginScrn
         {
             using (BakeryEntitiesNew context = new BakeryEntitiesNew())
             {
-                ProductsItem productsItem = context.ProductsItems.FirstOrDefault();
-                if (txt_removeProductCode.Text == productsItem.Id.ToString())
+                ProductsItem productsItem = context.ProductsItems.FirstOrDefault(p => p.Id.ToString() == txt_removeProductCode.Text);
+                if (productsItem.Id.ToString() == txt_removeProductCode.Text)
                 {
                     context.ProductsItems.Remove(productsItem);
                     context.SaveChanges();
