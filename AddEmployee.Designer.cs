@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.gbEmpPersonal = new System.Windows.Forms.GroupBox();
+            this.groupBoxMaritalStatus = new System.Windows.Forms.GroupBox();
+            this.rbEmpMarried = new System.Windows.Forms.RadioButton();
+            this.rbEmpSingle = new System.Windows.Forms.RadioButton();
+            this.rbEmpDivorced = new System.Windows.Forms.RadioButton();
+            this.rbEmpWidowed = new System.Windows.Forms.RadioButton();
+            this.groupBoxGender = new System.Windows.Forms.GroupBox();
+            this.rbEmpMale = new System.Windows.Forms.RadioButton();
+            this.rbEmpFemale = new System.Windows.Forms.RadioButton();
             this.txtEmpFname = new System.Windows.Forms.TextBox();
             this.txtEmpMidName = new System.Windows.Forms.TextBox();
             this.txtEmpLname = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerAddEmp = new System.Windows.Forms.DateTimePicker();
             this.lblEmpDob = new System.Windows.Forms.Label();
-            this.rbEmpWidowed = new System.Windows.Forms.RadioButton();
-            this.rbEmpDivorced = new System.Windows.Forms.RadioButton();
-            this.rbEmpMarried = new System.Windows.Forms.RadioButton();
-            this.rbEmpSingle = new System.Windows.Forms.RadioButton();
-            this.rbEmpMale = new System.Windows.Forms.RadioButton();
-            this.rbEmpFemale = new System.Windows.Forms.RadioButton();
             this.lblEmpLname = new System.Windows.Forms.Label();
             this.lblEmpMidname = new System.Windows.Forms.Label();
             this.lblEmpFname = new System.Windows.Forms.Label();
@@ -58,13 +60,11 @@
             this.btnEmpCancel = new System.Windows.Forms.Button();
             this.btnEmpExit = new System.Windows.Forms.Button();
             this.lblEmpID = new System.Windows.Forms.Label();
-            this.groupBoxGender = new System.Windows.Forms.GroupBox();
-            this.groupBoxMaritalStatus = new System.Windows.Forms.GroupBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.gbEmpPersonal.SuspendLayout();
-            this.gbEmpAddress.SuspendLayout();
-            this.groupBoxGender.SuspendLayout();
             this.groupBoxMaritalStatus.SuspendLayout();
+            this.groupBoxGender.SuspendLayout();
+            this.gbEmpAddress.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbEmpPersonal
@@ -74,7 +74,7 @@
             this.gbEmpPersonal.Controls.Add(this.txtEmpFname);
             this.gbEmpPersonal.Controls.Add(this.txtEmpMidName);
             this.gbEmpPersonal.Controls.Add(this.txtEmpLname);
-            this.gbEmpPersonal.Controls.Add(this.dateTimePicker1);
+            this.gbEmpPersonal.Controls.Add(this.dateTimePickerAddEmp);
             this.gbEmpPersonal.Controls.Add(this.lblEmpDob);
             this.gbEmpPersonal.Controls.Add(this.lblEmpLname);
             this.gbEmpPersonal.Controls.Add(this.lblEmpMidname);
@@ -88,70 +88,18 @@
             this.gbEmpPersonal.TabStop = false;
             this.gbEmpPersonal.Text = "Personal Info";
             // 
-            // txtEmpFname
+            // groupBoxMaritalStatus
             // 
-            this.txtEmpFname.Location = new System.Drawing.Point(112, 30);
-            this.txtEmpFname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtEmpFname.Name = "txtEmpFname";
-            this.txtEmpFname.Size = new System.Drawing.Size(263, 22);
-            this.txtEmpFname.TabIndex = 6;
-            // 
-            // txtEmpMidName
-            // 
-            this.txtEmpMidName.Location = new System.Drawing.Point(113, 69);
-            this.txtEmpMidName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtEmpMidName.Name = "txtEmpMidName";
-            this.txtEmpMidName.Size = new System.Drawing.Size(263, 22);
-            this.txtEmpMidName.TabIndex = 7;
-            // 
-            // txtEmpLname
-            // 
-            this.txtEmpLname.Location = new System.Drawing.Point(113, 100);
-            this.txtEmpLname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtEmpLname.Name = "txtEmpLname";
-            this.txtEmpLname.Size = new System.Drawing.Size(263, 22);
-            this.txtEmpLname.TabIndex = 8;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(113, 134);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(263, 22);
-            this.dateTimePicker1.TabIndex = 11;
-            // 
-            // lblEmpDob
-            // 
-            this.lblEmpDob.AutoSize = true;
-            this.lblEmpDob.Location = new System.Drawing.Point(9, 139);
-            this.lblEmpDob.Name = "lblEmpDob";
-            this.lblEmpDob.Size = new System.Drawing.Size(87, 17);
-            this.lblEmpDob.TabIndex = 3;
-            this.lblEmpDob.Text = "Date of Birth";
-            // 
-            // rbEmpWidowed
-            // 
-            this.rbEmpWidowed.AutoSize = true;
-            this.rbEmpWidowed.Location = new System.Drawing.Point(281, 25);
-            this.rbEmpWidowed.Margin = new System.Windows.Forms.Padding(7);
-            this.rbEmpWidowed.Name = "rbEmpWidowed";
-            this.rbEmpWidowed.Size = new System.Drawing.Size(86, 21);
-            this.rbEmpWidowed.TabIndex = 10;
-            this.rbEmpWidowed.TabStop = true;
-            this.rbEmpWidowed.Text = "Widowed";
-            this.rbEmpWidowed.UseVisualStyleBackColor = true;
-            // 
-            // rbEmpDivorced
-            // 
-            this.rbEmpDivorced.AutoSize = true;
-            this.rbEmpDivorced.Location = new System.Drawing.Point(182, 25);
-            this.rbEmpDivorced.Margin = new System.Windows.Forms.Padding(7);
-            this.rbEmpDivorced.Name = "rbEmpDivorced";
-            this.rbEmpDivorced.Size = new System.Drawing.Size(85, 21);
-            this.rbEmpDivorced.TabIndex = 9;
-            this.rbEmpDivorced.TabStop = true;
-            this.rbEmpDivorced.Text = "Divorced";
-            this.rbEmpDivorced.UseVisualStyleBackColor = true;
+            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpMarried);
+            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpSingle);
+            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpDivorced);
+            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpWidowed);
+            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(1, 232);
+            this.groupBoxMaritalStatus.Name = "groupBoxMaritalStatus";
+            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(387, 66);
+            this.groupBoxMaritalStatus.TabIndex = 15;
+            this.groupBoxMaritalStatus.TabStop = false;
+            this.groupBoxMaritalStatus.Text = "Marital Status";
             // 
             // rbEmpMarried
             // 
@@ -177,6 +125,41 @@
             this.rbEmpSingle.Text = "Single";
             this.rbEmpSingle.UseVisualStyleBackColor = true;
             // 
+            // rbEmpDivorced
+            // 
+            this.rbEmpDivorced.AutoSize = true;
+            this.rbEmpDivorced.Location = new System.Drawing.Point(182, 25);
+            this.rbEmpDivorced.Margin = new System.Windows.Forms.Padding(7);
+            this.rbEmpDivorced.Name = "rbEmpDivorced";
+            this.rbEmpDivorced.Size = new System.Drawing.Size(85, 21);
+            this.rbEmpDivorced.TabIndex = 9;
+            this.rbEmpDivorced.TabStop = true;
+            this.rbEmpDivorced.Text = "Divorced";
+            this.rbEmpDivorced.UseVisualStyleBackColor = true;
+            // 
+            // rbEmpWidowed
+            // 
+            this.rbEmpWidowed.AutoSize = true;
+            this.rbEmpWidowed.Location = new System.Drawing.Point(281, 25);
+            this.rbEmpWidowed.Margin = new System.Windows.Forms.Padding(7);
+            this.rbEmpWidowed.Name = "rbEmpWidowed";
+            this.rbEmpWidowed.Size = new System.Drawing.Size(86, 21);
+            this.rbEmpWidowed.TabIndex = 10;
+            this.rbEmpWidowed.TabStop = true;
+            this.rbEmpWidowed.Text = "Widowed";
+            this.rbEmpWidowed.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxGender
+            // 
+            this.groupBoxGender.Controls.Add(this.rbEmpMale);
+            this.groupBoxGender.Controls.Add(this.rbEmpFemale);
+            this.groupBoxGender.Location = new System.Drawing.Point(0, 170);
+            this.groupBoxGender.Name = "groupBoxGender";
+            this.groupBoxGender.Size = new System.Drawing.Size(388, 56);
+            this.groupBoxGender.TabIndex = 15;
+            this.groupBoxGender.TabStop = false;
+            this.groupBoxGender.Text = "Gender";
+            // 
             // rbEmpMale
             // 
             this.rbEmpMale.AutoSize = true;
@@ -200,6 +183,47 @@
             this.rbEmpFemale.TabStop = true;
             this.rbEmpFemale.Text = "Female";
             this.rbEmpFemale.UseVisualStyleBackColor = true;
+            // 
+            // txtEmpFname
+            // 
+            this.txtEmpFname.Location = new System.Drawing.Point(112, 30);
+            this.txtEmpFname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmpFname.Name = "txtEmpFname";
+            this.txtEmpFname.Size = new System.Drawing.Size(263, 22);
+            this.txtEmpFname.TabIndex = 6;
+            // 
+            // txtEmpMidName
+            // 
+            this.txtEmpMidName.Location = new System.Drawing.Point(113, 69);
+            this.txtEmpMidName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmpMidName.Name = "txtEmpMidName";
+            this.txtEmpMidName.Size = new System.Drawing.Size(263, 22);
+            this.txtEmpMidName.TabIndex = 7;
+            // 
+            // txtEmpLname
+            // 
+            this.txtEmpLname.Location = new System.Drawing.Point(113, 100);
+            this.txtEmpLname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmpLname.Name = "txtEmpLname";
+            this.txtEmpLname.Size = new System.Drawing.Size(263, 22);
+            this.txtEmpLname.TabIndex = 8;
+            // 
+            // dateTimePickerAddEmp
+            // 
+            this.dateTimePickerAddEmp.Location = new System.Drawing.Point(113, 134);
+            this.dateTimePickerAddEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dateTimePickerAddEmp.Name = "dateTimePickerAddEmp";
+            this.dateTimePickerAddEmp.Size = new System.Drawing.Size(263, 22);
+            this.dateTimePickerAddEmp.TabIndex = 11;
+            // 
+            // lblEmpDob
+            // 
+            this.lblEmpDob.AutoSize = true;
+            this.lblEmpDob.Location = new System.Drawing.Point(9, 139);
+            this.lblEmpDob.Name = "lblEmpDob";
+            this.lblEmpDob.Size = new System.Drawing.Size(87, 17);
+            this.lblEmpDob.TabIndex = 3;
+            this.lblEmpDob.Text = "Date of Birth";
             // 
             // lblEmpLname
             // 
@@ -343,9 +367,11 @@
             this.btnEmpAdd.TabIndex = 11;
             this.btnEmpAdd.Text = "Add";
             this.btnEmpAdd.UseVisualStyleBackColor = true;
+            this.btnEmpAdd.Click += new System.EventHandler(this.BtnEmpAdd_Click);
             // 
             // btnEmpCancel
             // 
+            this.btnEmpCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnEmpCancel.Location = new System.Drawing.Point(320, 389);
             this.btnEmpCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEmpCancel.Name = "btnEmpCancel";
@@ -374,30 +400,6 @@
             this.lblEmpID.TabIndex = 14;
             this.lblEmpID.Text = "Employee ID";
             // 
-            // groupBoxGender
-            // 
-            this.groupBoxGender.Controls.Add(this.rbEmpMale);
-            this.groupBoxGender.Controls.Add(this.rbEmpFemale);
-            this.groupBoxGender.Location = new System.Drawing.Point(0, 170);
-            this.groupBoxGender.Name = "groupBoxGender";
-            this.groupBoxGender.Size = new System.Drawing.Size(388, 56);
-            this.groupBoxGender.TabIndex = 15;
-            this.groupBoxGender.TabStop = false;
-            this.groupBoxGender.Text = "Gender";
-            // 
-            // groupBoxMaritalStatus
-            // 
-            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpMarried);
-            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpSingle);
-            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpDivorced);
-            this.groupBoxMaritalStatus.Controls.Add(this.rbEmpWidowed);
-            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(1, 232);
-            this.groupBoxMaritalStatus.Name = "groupBoxMaritalStatus";
-            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(387, 66);
-            this.groupBoxMaritalStatus.TabIndex = 15;
-            this.groupBoxMaritalStatus.TabStop = false;
-            this.groupBoxMaritalStatus.Text = "Marital Status";
-            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(535, 325);
@@ -425,12 +427,12 @@
             this.Text = "AddEmployee";
             this.gbEmpPersonal.ResumeLayout(false);
             this.gbEmpPersonal.PerformLayout();
-            this.gbEmpAddress.ResumeLayout(false);
-            this.gbEmpAddress.PerformLayout();
-            this.groupBoxGender.ResumeLayout(false);
-            this.groupBoxGender.PerformLayout();
             this.groupBoxMaritalStatus.ResumeLayout(false);
             this.groupBoxMaritalStatus.PerformLayout();
+            this.groupBoxGender.ResumeLayout(false);
+            this.groupBoxGender.PerformLayout();
+            this.gbEmpAddress.ResumeLayout(false);
+            this.gbEmpAddress.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -449,7 +451,7 @@
         private System.Windows.Forms.RadioButton rbEmpFemale;
         private System.Windows.Forms.RadioButton rbEmpWidowed;
         private System.Windows.Forms.RadioButton rbEmpDivorced;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerAddEmp;
         private System.Windows.Forms.TextBox txtEmpFname;
         private System.Windows.Forms.TextBox txtEmpMidName;
         private System.Windows.Forms.TextBox txtEmpLname;
