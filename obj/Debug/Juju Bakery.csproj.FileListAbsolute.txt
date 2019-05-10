@@ -64,6 +64,7 @@ C:\Users\Dwayne Richards\Desktop\JuJu's Bakery Pro\Juju-Bakery\obj\Debug\Juju Ba
 C:\Users\Dwayne Richards\Desktop\JuJu's Bakery Pro\Juju-Bakery\obj\Debug\Juju Bakery.csproj.CopyComplete
 C:\Users\Dwayne Richards\Desktop\JuJu's Bakery Pro\Juju-Bakery\obj\Debug\LoginScrn.exe
 C:\Users\Dwayne Richards\Desktop\JuJu's Bakery Pro\Juju-Bakery\obj\Debug\LoginScrn.pdb
+<<<<<<< HEAD
 C:\Users\Abbey\Documents\Juju-Bakery\bin\Debug\LoginScrn.exe.config
 C:\Users\Abbey\Documents\Juju-Bakery\bin\Debug\LoginScrn.exe
 C:\Users\Abbey\Documents\Juju-Bakery\bin\Debug\LoginScrn.pdb
@@ -88,3 +89,6 @@ C:\Users\Abbey\Documents\Juju-Bakery\obj\Debug\Juju Bakery.csproj.CoreCompileInp
 C:\Users\Abbey\Documents\Juju-Bakery\obj\Debug\Juju Bakery.csproj.CopyComplete
 C:\Users\Abbey\Documents\Juju-Bakery\obj\Debug\LoginScrn.exe
 C:\Users\Abbey\Documents\Juju-Bakery\obj\Debug\LoginScrn.pdb
+=======
+D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\Juju Bakery.csprojAssemblyReference.cache
+>>>>>>> 42dfc05e584d7e422778c79c212b7f5a03b6c671
