@@ -34,7 +34,6 @@
             this.employeeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewEmployeeListToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -76,8 +75,7 @@
             // 
             this.employeeDetailsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewEmployeeToolStripMenuItem,
-            this.removeEmployeeToolStripMenuItem,
-            this.viewEmployeeListToolStripMenuItem});
+            this.removeEmployeeToolStripMenuItem});
             this.employeeDetailsToolStripMenuItem.Name = "employeeDetailsToolStripMenuItem";
             this.employeeDetailsToolStripMenuItem.Size = new System.Drawing.Size(137, 38);
             this.employeeDetailsToolStripMenuItem.Text = "Employee Details";
@@ -93,15 +91,8 @@
             // 
             this.removeEmployeeToolStripMenuItem.Name = "removeEmployeeToolStripMenuItem";
             this.removeEmployeeToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.removeEmployeeToolStripMenuItem.Text = "Remove Employee";
+            this.removeEmployeeToolStripMenuItem.Text = "View Employee List";
             this.removeEmployeeToolStripMenuItem.Click += new System.EventHandler(this.RemoveEmployeeToolStripMenuItem_Click);
-            // 
-            // viewEmployeeListToolStripMenuItem
-            // 
-            this.viewEmployeeListToolStripMenuItem.Name = "viewEmployeeListToolStripMenuItem";
-            this.viewEmployeeListToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.viewEmployeeListToolStripMenuItem.Text = "View Employee List";
-            this.viewEmployeeListToolStripMenuItem.Click += new System.EventHandler(this.ViewEmployeeListToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
             // 
@@ -186,7 +177,6 @@
         private System.Windows.Forms.ToolStripMenuItem employeeDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewEmployeeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeEmployeeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewEmployeeListToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewProductToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeProductToolStripMenuItem;

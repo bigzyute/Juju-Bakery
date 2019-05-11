@@ -73,10 +73,16 @@
     <Compile Include="AddNewProduct.Designer.cs">
       <DependentUpon>AddNewProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="BakeryDataSet.Designer.cs">
+    <Compile Include="EmployeeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeView.Designer.cs">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+      <DependentUpon>ListBoxDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -140,12 +146,6 @@
     <Compile Include="StockReport.Designer.cs">
       <DependentUpon>StockReport.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewEmployeeList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ViewEmployeeList.Designer.cs">
-      <DependentUpon>ViewEmployeeList.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddCustomer.resx">
       <DependentUpon>AddCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewProduct.resx">
       <DependentUpon>AddNewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeView.resx">
+      <DependentUpon>EmployeeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -186,19 +189,16 @@
     <EmbeddedResource Include="StockReport.resx">
       <DependentUpon>StockReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewEmployeeList.resx">
-      <DependentUpon>ViewEmployeeList.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="BakeryDataSet.xsc">
-      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+    <None Include="ListBoxDataSet.xsc">
+      <DependentUpon>ListBoxDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BakeryDataSet.xsd">
+    <None Include="ListBoxDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BakeryDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>ListBoxDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BakeryDataSet.xss">
-      <DependentUpon>BakeryDataSet.xsd</DependentUpon>
+    <None Include="ListBoxDataSet.xss">
+      <DependentUpon>ListBoxDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <EntityDeploy Include="productsItemsModel.edmx">

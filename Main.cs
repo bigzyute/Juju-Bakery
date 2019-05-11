@@ -170,15 +170,10 @@ namespace LoginScrn
         }
         private void RemoveEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void ViewEmployeeListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
             bool isOpen = false;
             foreach (Form f in Application.OpenForms)
             {
-                if (f.Text == "ViewEmployeeList")
+                if (f.Text == "EmployeeView")
                 {
                     isOpen = true;
                     f.BringToFront();
@@ -187,9 +182,9 @@ namespace LoginScrn
             }
             if (isOpen == false)
             {
-                ViewEmployeeList objVEL = new ViewEmployeeList();
-                objVEL.MdiParent = this;
-                objVEL.Show();
+                EmployeeView objEV = new EmployeeView();
+                objEV.MdiParent = this;
+                objEV.Show();
             }
         }
     }
