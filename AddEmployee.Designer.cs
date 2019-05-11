@@ -65,12 +65,18 @@
             this.btnEmpAdd = new System.Windows.Forms.Button();
             this.btnEmpCancel = new System.Windows.Forms.Button();
             this.btnEmpExit = new System.Windows.Forms.Button();
-            this.lblEmpID = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBoxLogInInfo = new System.Windows.Forms.GroupBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.gbEmpPersonal.SuspendLayout();
             this.groupBoxMaritalStatus.SuspendLayout();
             this.groupBoxGender.SuspendLayout();
             this.gbEmpAddress.SuspendLayout();
+            this.groupBoxLogInInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbEmpPersonal
@@ -262,6 +268,7 @@
             // 
             this.txtEmpMidName.Location = new System.Drawing.Point(113, 69);
             this.txtEmpMidName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtEmpMidName.MaxLength = 1;
             this.txtEmpMidName.Name = "txtEmpMidName";
             this.txtEmpMidName.Size = new System.Drawing.Size(263, 22);
             this.txtEmpMidName.TabIndex = 7;
@@ -276,6 +283,8 @@
             // 
             // dateTimePickerAddEmp
             // 
+            this.dateTimePickerAddEmp.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePickerAddEmp.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePickerAddEmp.Location = new System.Drawing.Point(113, 134);
             this.dateTimePickerAddEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePickerAddEmp.Name = "dateTimePickerAddEmp";
@@ -469,22 +478,75 @@
             this.btnEmpExit.UseVisualStyleBackColor = true;
             this.btnEmpExit.Click += new System.EventHandler(this.btnEmpExit_Click);
             // 
-            // lblEmpID
+            // groupBoxLogInInfo
             // 
-            this.lblEmpID.AutoSize = true;
-            this.lblEmpID.Location = new System.Drawing.Point(438, 328);
-            this.lblEmpID.Name = "lblEmpID";
-            this.lblEmpID.Size = new System.Drawing.Size(87, 17);
-            this.lblEmpID.TabIndex = 14;
-            this.lblEmpID.Text = "Employee ID";
+            this.groupBoxLogInInfo.Controls.Add(this.label8);
+            this.groupBoxLogInInfo.Controls.Add(this.label7);
+            this.groupBoxLogInInfo.Controls.Add(this.txtBoxPassword);
+            this.groupBoxLogInInfo.Controls.Add(this.txtBoxUsername);
+            this.groupBoxLogInInfo.Controls.Add(this.label6);
+            this.groupBoxLogInInfo.Controls.Add(this.lblUsername);
+            this.groupBoxLogInInfo.Location = new System.Drawing.Point(432, 252);
+            this.groupBoxLogInInfo.Name = "groupBoxLogInInfo";
+            this.groupBoxLogInInfo.Size = new System.Drawing.Size(337, 110);
+            this.groupBoxLogInInfo.TabIndex = 14;
+            this.groupBoxLogInInfo.TabStop = false;
+            this.groupBoxLogInInfo.Text = "Log In Info";
             // 
-            // textBox6
+            // lblUsername
             // 
-            this.textBox6.Location = new System.Drawing.Point(535, 325);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 15;
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(20, 27);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(73, 17);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 17);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Password";
+            // 
+            // txtBoxUsername
+            // 
+            this.txtBoxUsername.Location = new System.Drawing.Point(103, 27);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxUsername.TabIndex = 2;
+            // 
+            // txtBoxPassword
+            // 
+            this.txtBoxPassword.Location = new System.Drawing.Point(103, 62);
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.PasswordChar = '*';
+            this.txtBoxPassword.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxPassword.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(312, 27);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "*";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(312, 65);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(14, 17);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "*";
             // 
             // AddEmployee
             // 
@@ -492,14 +554,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnEmpCancel;
             this.ClientSize = new System.Drawing.Size(797, 431);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.lblEmpID);
+            this.Controls.Add(this.groupBoxLogInInfo);
             this.Controls.Add(this.btnEmpAdd);
             this.Controls.Add(this.btnEmpCancel);
             this.Controls.Add(this.btnEmpExit);
             this.Controls.Add(this.gbEmpAddress);
             this.Controls.Add(this.gbEmpPersonal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "AddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddEmployee";
@@ -511,8 +574,9 @@
             this.groupBoxGender.PerformLayout();
             this.gbEmpAddress.ResumeLayout(false);
             this.gbEmpAddress.PerformLayout();
+            this.groupBoxLogInInfo.ResumeLayout(false);
+            this.groupBoxLogInInfo.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -547,15 +611,20 @@
         private System.Windows.Forms.Button btnEmpAdd;
         private System.Windows.Forms.Button btnEmpCancel;
         private System.Windows.Forms.Button btnEmpExit;
-        private System.Windows.Forms.Label lblEmpID;
         private System.Windows.Forms.GroupBox groupBoxMaritalStatus;
         private System.Windows.Forms.GroupBox groupBoxGender;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelRequired;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox groupBoxLogInInfo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txtBoxPassword;
+        private System.Windows.Forms.TextBox txtBoxUsername;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

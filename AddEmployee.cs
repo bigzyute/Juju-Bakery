@@ -29,7 +29,10 @@ namespace LoginScrn
         {
             char gender = 'm';
             string mStatus = "single";
-            //Gender validation and assignment
+            int telephone;
+            Int32.TryParse(txtBoxAddressTelephone.Text, out telephone);
+            bool validated = false;
+            //Input validation
             if (string.IsNullOrWhiteSpace(txtEmpFname.Text) || string.IsNullOrWhiteSpace(txtEmpLname.Text))
             {
                 MessageBox.Show("Please complete the required feilds", "Name Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -37,45 +40,99 @@ namespace LoginScrn
             else if (rbEmpFemale.Checked == false && rbEmpMale.Checked == false)
             {
                 MessageBox.Show("Please select a gender.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else if (rbEmpSingle.Checked == false || rbEmpMarried.Checked == false || rbEmpWidowed.Checked == false ||
+            } else if (rbEmpSingle.Checked == false && rbEmpMarried.Checked == false && rbEmpWidowed.Checked == false &&
                 rbEmpDivorced.Checked == false)
             {
                 MessageBox.Show("Please select a Marital Status.", "Marital Status Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else if (string.IsNullOrWhiteSpace(txtBoxAddressTown.Text))
             {
-                MessageBox.Show("An address must be selected.", "Gender Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            } else if (rbEmpFemale.Checked == true)
-            {
-                gender = 'f';
+                MessageBox.Show("A Town must be added.", "Town Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } else
             {
-                gender = 'm';
+                validated = true; //If input is validated, the variable "validated" is set to true
+            } 
+            
+            if (validated == true) //Assigning radio buttos
+            {
+                if (rbEmpFemale.Checked == true)
+                {
+                    gender = 'f';
+                }
+                else if (rbEmpMale.Checked == true)
+                {
+                    gender = 'm';
+                }
+                else if (rbEmpDivorced.Checked == true)
+                {
+                    mStatus = "divorced";
+                }
+                else if (rbEmpMarried.Checked == true)
+                {
+                    mStatus = "married";
+                }
+                else if (rbEmpWidowed.Checked == true)
+                {
+                    mStatus = "widowed";
+                }
+                else
+                {
+                    mStatus = "single";
+                }
             }
 
-            if (rbEmpSingle.Checked == true)
+            if (validated == true)
             {
-                mStatus = "single";
-            } else if (rbEmpMarried.Checked == true)
-            {
-                mStatus = "married";
-            }
-            else if (rbEmpWidowed.Checked == true)
-            {
-                mStatus = "widowed";
-            }
-            else
-            {
-                mStatus = "divorced";
+                SqlConnection connection = new SqlConnection(connectionString);
+                String query = "INSERT INTO Employee VALUES('" + txtEmpFname.Text + "', '" + txtEmpMidName.Text + "', '" + txtEmpLname.Text + "', '"
+                        + dateTimePickerAddEmp.Text + "', '" + gender + "', '" + mStatus + "', '" + txtBoxAddressTown.Text + "', '" + txtBoxAddressPoBox.Text + "', '"
+                        + txtBoxAddressParish.Text + "', '" + telephone + "', '" + txtBoxAddressEmail.Text + "');";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataReader reader;
+                try
+                {
+                    connection.Open();
+                    reader = cmd.ExecuteReader();
+                    MessageBox.Show("Records Inserted Successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    while (reader.Read())
+                    {
+
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Error Generated. Details: " + ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connection.Close();
+                }
             }
 
-            /*using(SqlConnection connection = new SqlConnection(connectionString))
+            if (validated == true)
             {
-                string query = "INSERT INTO Employee VALUES('"+txtEmpFname.Text+"', '"+txtEmpMidName.Text+"', '"+txtEmpLname.Text+"', '"
-                    +dateTimePickerAddEmp+"', '"+gender+"', '"+mStatus+"', '"+txtBoxAddressTown.Text+"', '"+txtBoxAddressPoBox.Text+"', '"
-                    +txtBoxAddressParish.Text+"', )";
-                connection.Open();
-                SqlCommand cmd = new SqlCommand();
-            }*/
+                SqlConnection connection = new SqlConnection(connectionString);
+                String query = "INSERT INTO Login VALUES('" +txtBoxUsername.Text+ "', '" +txtBoxPassword.Text+ "');";
+                SqlCommand cmd = new SqlCommand(query, connection);
+                SqlDataReader reader;
+                try
+                {
+                    connection.Open();
+                    reader = cmd.ExecuteReader();
+                    MessageBox.Show("Username and Password entered successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    while (reader.Read())
+                    {
+
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Error Generated. Details: " + ex.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
     }
 }
