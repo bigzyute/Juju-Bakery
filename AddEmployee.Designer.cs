@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.gbEmpPersonal = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelRequired = new System.Windows.Forms.Label();
             this.groupBoxMaritalStatus = new System.Windows.Forms.GroupBox();
             this.rbEmpMarried = new System.Windows.Forms.RadioButton();
             this.rbEmpSingle = new System.Windows.Forms.RadioButton();
@@ -51,11 +56,12 @@
             this.lblEmpTelephone = new System.Windows.Forms.Label();
             this.lblEmpEmail = new System.Windows.Forms.Label();
             this.gbEmpAddress = new System.Windows.Forms.GroupBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtBoxAddressEmail = new System.Windows.Forms.TextBox();
+            this.txtBoxAddressTelephone = new System.Windows.Forms.TextBox();
+            this.txtBoxAddressParish = new System.Windows.Forms.TextBox();
+            this.txtBoxAddressPoBox = new System.Windows.Forms.TextBox();
+            this.txtBoxAddressTown = new System.Windows.Forms.TextBox();
             this.btnEmpAdd = new System.Windows.Forms.Button();
             this.btnEmpCancel = new System.Windows.Forms.Button();
             this.btnEmpExit = new System.Windows.Forms.Button();
@@ -69,6 +75,11 @@
             // 
             // gbEmpPersonal
             // 
+            this.gbEmpPersonal.Controls.Add(this.label4);
+            this.gbEmpPersonal.Controls.Add(this.label3);
+            this.gbEmpPersonal.Controls.Add(this.label2);
+            this.gbEmpPersonal.Controls.Add(this.label1);
+            this.gbEmpPersonal.Controls.Add(this.labelRequired);
             this.gbEmpPersonal.Controls.Add(this.groupBoxMaritalStatus);
             this.gbEmpPersonal.Controls.Add(this.groupBoxGender);
             this.gbEmpPersonal.Controls.Add(this.txtEmpFname);
@@ -83,10 +94,65 @@
             this.gbEmpPersonal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEmpPersonal.Name = "gbEmpPersonal";
             this.gbEmpPersonal.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbEmpPersonal.Size = new System.Drawing.Size(388, 342);
+            this.gbEmpPersonal.Size = new System.Drawing.Size(401, 342);
             this.gbEmpPersonal.TabIndex = 0;
             this.gbEmpPersonal.TabStop = false;
             this.gbEmpPersonal.Text = "Personal Info";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(381, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 17);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "*";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(381, 192);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 17);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "*";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(381, 139);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 17);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "*";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(381, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "*";
+            // 
+            // labelRequired
+            // 
+            this.labelRequired.AutoSize = true;
+            this.labelRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRequired.ForeColor = System.Drawing.Color.Red;
+            this.labelRequired.Location = new System.Drawing.Point(381, 33);
+            this.labelRequired.Name = "labelRequired";
+            this.labelRequired.Size = new System.Drawing.Size(14, 17);
+            this.labelRequired.TabIndex = 16;
+            this.labelRequired.Text = "*";
             // 
             // groupBoxMaritalStatus
             // 
@@ -94,9 +160,9 @@
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpSingle);
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpDivorced);
             this.groupBoxMaritalStatus.Controls.Add(this.rbEmpWidowed);
-            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(1, 232);
+            this.groupBoxMaritalStatus.Location = new System.Drawing.Point(12, 232);
             this.groupBoxMaritalStatus.Name = "groupBoxMaritalStatus";
-            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(387, 66);
+            this.groupBoxMaritalStatus.Size = new System.Drawing.Size(364, 66);
             this.groupBoxMaritalStatus.TabIndex = 15;
             this.groupBoxMaritalStatus.TabStop = false;
             this.groupBoxMaritalStatus.Text = "Marital Status";
@@ -140,7 +206,7 @@
             // rbEmpWidowed
             // 
             this.rbEmpWidowed.AutoSize = true;
-            this.rbEmpWidowed.Location = new System.Drawing.Point(281, 25);
+            this.rbEmpWidowed.Location = new System.Drawing.Point(273, 25);
             this.rbEmpWidowed.Margin = new System.Windows.Forms.Padding(7);
             this.rbEmpWidowed.Name = "rbEmpWidowed";
             this.rbEmpWidowed.Size = new System.Drawing.Size(86, 21);
@@ -153,9 +219,9 @@
             // 
             this.groupBoxGender.Controls.Add(this.rbEmpMale);
             this.groupBoxGender.Controls.Add(this.rbEmpFemale);
-            this.groupBoxGender.Location = new System.Drawing.Point(0, 170);
+            this.groupBoxGender.Location = new System.Drawing.Point(12, 170);
             this.groupBoxGender.Name = "groupBoxGender";
-            this.groupBoxGender.Size = new System.Drawing.Size(388, 56);
+            this.groupBoxGender.Size = new System.Drawing.Size(363, 56);
             this.groupBoxGender.TabIndex = 15;
             this.groupBoxGender.TabStop = false;
             this.groupBoxGender.Text = "Gender";
@@ -299,11 +365,12 @@
             // 
             // gbEmpAddress
             // 
-            this.gbEmpAddress.Controls.Add(this.textBox5);
-            this.gbEmpAddress.Controls.Add(this.textBox4);
-            this.gbEmpAddress.Controls.Add(this.textBox3);
-            this.gbEmpAddress.Controls.Add(this.textBox2);
-            this.gbEmpAddress.Controls.Add(this.textBox1);
+            this.gbEmpAddress.Controls.Add(this.label5);
+            this.gbEmpAddress.Controls.Add(this.txtBoxAddressEmail);
+            this.gbEmpAddress.Controls.Add(this.txtBoxAddressTelephone);
+            this.gbEmpAddress.Controls.Add(this.txtBoxAddressParish);
+            this.gbEmpAddress.Controls.Add(this.txtBoxAddressPoBox);
+            this.gbEmpAddress.Controls.Add(this.txtBoxAddressTown);
             this.gbEmpAddress.Controls.Add(this.lblEmpEmail);
             this.gbEmpAddress.Controls.Add(this.lblEmpDistrict);
             this.gbEmpAddress.Controls.Add(this.lblEmpPO);
@@ -313,50 +380,61 @@
             this.gbEmpAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbEmpAddress.Name = "gbEmpAddress";
             this.gbEmpAddress.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbEmpAddress.Size = new System.Drawing.Size(327, 226);
+            this.gbEmpAddress.Size = new System.Drawing.Size(337, 226);
             this.gbEmpAddress.TabIndex = 12;
             this.gbEmpAddress.TabStop = false;
             this.gbEmpAddress.Text = "Address Info";
             // 
-            // textBox5
+            // label5
             // 
-            this.textBox5.Location = new System.Drawing.Point(103, 186);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(203, 22);
-            this.textBox5.TabIndex = 15;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(312, 39);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 17);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "*";
             // 
-            // textBox4
+            // txtBoxAddressEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(103, 148);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(203, 22);
-            this.textBox4.TabIndex = 14;
+            this.txtBoxAddressEmail.Location = new System.Drawing.Point(103, 186);
+            this.txtBoxAddressEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxAddressEmail.Name = "txtBoxAddressEmail";
+            this.txtBoxAddressEmail.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxAddressEmail.TabIndex = 15;
             // 
-            // textBox3
+            // txtBoxAddressTelephone
             // 
-            this.textBox3.Location = new System.Drawing.Point(103, 107);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(203, 22);
-            this.textBox3.TabIndex = 13;
+            this.txtBoxAddressTelephone.Location = new System.Drawing.Point(103, 148);
+            this.txtBoxAddressTelephone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxAddressTelephone.Name = "txtBoxAddressTelephone";
+            this.txtBoxAddressTelephone.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxAddressTelephone.TabIndex = 14;
             // 
-            // textBox2
+            // txtBoxAddressParish
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 74);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 22);
-            this.textBox2.TabIndex = 12;
+            this.txtBoxAddressParish.Location = new System.Drawing.Point(103, 107);
+            this.txtBoxAddressParish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxAddressParish.Name = "txtBoxAddressParish";
+            this.txtBoxAddressParish.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxAddressParish.TabIndex = 13;
             // 
-            // textBox1
+            // txtBoxAddressPoBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 22);
-            this.textBox1.TabIndex = 11;
+            this.txtBoxAddressPoBox.Location = new System.Drawing.Point(103, 74);
+            this.txtBoxAddressPoBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxAddressPoBox.Name = "txtBoxAddressPoBox";
+            this.txtBoxAddressPoBox.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxAddressPoBox.TabIndex = 12;
+            // 
+            // txtBoxAddressTown
+            // 
+            this.txtBoxAddressTown.Location = new System.Drawing.Point(103, 36);
+            this.txtBoxAddressTown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxAddressTown.Name = "txtBoxAddressTown";
+            this.txtBoxAddressTown.Size = new System.Drawing.Size(203, 22);
+            this.txtBoxAddressTown.TabIndex = 11;
             // 
             // btnEmpAdd
             // 
@@ -461,11 +539,11 @@
         private System.Windows.Forms.Label lblEmpTelephone;
         private System.Windows.Forms.Label lblEmpEmail;
         private System.Windows.Forms.GroupBox gbEmpAddress;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxAddressEmail;
+        private System.Windows.Forms.TextBox txtBoxAddressTelephone;
+        private System.Windows.Forms.TextBox txtBoxAddressParish;
+        private System.Windows.Forms.TextBox txtBoxAddressPoBox;
+        private System.Windows.Forms.TextBox txtBoxAddressTown;
         private System.Windows.Forms.Button btnEmpAdd;
         private System.Windows.Forms.Button btnEmpCancel;
         private System.Windows.Forms.Button btnEmpExit;
@@ -473,5 +551,11 @@
         private System.Windows.Forms.GroupBox groupBoxMaritalStatus;
         private System.Windows.Forms.GroupBox groupBoxGender;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelRequired;
+        private System.Windows.Forms.Label label5;
     }
 }
