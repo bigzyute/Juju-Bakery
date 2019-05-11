@@ -170,7 +170,22 @@ namespace LoginScrn
         }
         private void RemoveEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            bool isOpen = false;
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Text == "EmployeeView")
+                {
+                    isOpen = true;
+                    f.BringToFront();
+                    break;
+                }
+            }
+            if (isOpen == false)
+            {
+                EmployeeView objEV = new EmployeeView();
+                objEV.MdiParent = this;
+                objEV.Show();
+            }
         }
     }
 }

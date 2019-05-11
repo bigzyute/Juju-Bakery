@@ -22,3 +22,4 @@ D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\bin\Debug\E
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\Juju Bakery.csproj.CopyComplete
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.exe
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.pdb
+D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.EmployeeView.resources
