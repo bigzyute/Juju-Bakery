@@ -35,23 +35,18 @@
             this.txtBoxSubTotal = new System.Windows.Forms.TextBox();
             this.numericUpDownQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblOrderSubTotal = new System.Windows.Forms.Label();
-            this.lblOrderGct = new System.Windows.Forms.Label();
             this.lblOrderTotal = new System.Windows.Forms.Label();
-            this.txtOrderGct = new System.Windows.Forms.TextBox();
             this.txtOrdetTotal = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbl_Price = new System.Windows.Forms.Label();
             this.txt_Pri = new System.Windows.Forms.TextBox();
             this.btn_OrClear = new System.Windows.Forms.Button();
-            this.txt_OrderNo = new System.Windows.Forms.TextBox();
-            this.lbl_OrderNo = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePickerSaleDate = new System.Windows.Forms.DateTimePicker();
             this.btn_OrSave = new System.Windows.Forms.Button();
             this.lbl_OrCusName = new System.Windows.Forms.Label();
             this.txt_OrCusName = new System.Windows.Forms.TextBox();
             this.lbl_OrDiscount = new System.Windows.Forms.Label();
             this.txt_OrDisco = new System.Windows.Forms.TextBox();
-            this.btn_OrderClear = new System.Windows.Forms.Button();
             this.btn_OrExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,37 +108,19 @@
             this.lblOrderSubTotal.TabIndex = 5;
             this.lblOrderSubTotal.Text = "Sub-Total";
             // 
-            // lblOrderGct
-            // 
-            this.lblOrderGct.AutoSize = true;
-            this.lblOrderGct.Location = new System.Drawing.Point(499, 228);
-            this.lblOrderGct.Name = "lblOrderGct";
-            this.lblOrderGct.Size = new System.Drawing.Size(45, 17);
-            this.lblOrderGct.TabIndex = 6;
-            this.lblOrderGct.Text = "G.C.T";
-            // 
             // lblOrderTotal
             // 
             this.lblOrderTotal.AutoSize = true;
-            this.lblOrderTotal.Location = new System.Drawing.Point(500, 282);
+            this.lblOrderTotal.Location = new System.Drawing.Point(500, 245);
             this.lblOrderTotal.Name = "lblOrderTotal";
             this.lblOrderTotal.Size = new System.Drawing.Size(44, 17);
             this.lblOrderTotal.TabIndex = 7;
             this.lblOrderTotal.Text = "Total ";
             this.lblOrderTotal.Click += new System.EventHandler(this.label3_Click);
             // 
-            // txtOrderGct
-            // 
-            this.txtOrderGct.Location = new System.Drawing.Point(572, 223);
-            this.txtOrderGct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtOrderGct.Name = "txtOrderGct";
-            this.txtOrderGct.ReadOnly = true;
-            this.txtOrderGct.Size = new System.Drawing.Size(89, 22);
-            this.txtOrderGct.TabIndex = 8;
-            // 
             // txtOrdetTotal
             // 
-            this.txtOrdetTotal.Location = new System.Drawing.Point(572, 279);
+            this.txtOrdetTotal.Location = new System.Drawing.Point(572, 242);
             this.txtOrdetTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtOrdetTotal.Name = "txtOrdetTotal";
             this.txtOrdetTotal.ReadOnly = true;
@@ -196,33 +173,16 @@
             this.btn_OrClear.UseVisualStyleBackColor = false;
             this.btn_OrClear.Click += new System.EventHandler(this.Btn_OrClear_Click);
             // 
-            // txt_OrderNo
+            // dateTimePickerSaleDate
             // 
-            this.txt_OrderNo.Location = new System.Drawing.Point(329, 15);
-            this.txt_OrderNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_OrderNo.Name = "txt_OrderNo";
-            this.txt_OrderNo.ReadOnly = true;
-            this.txt_OrderNo.Size = new System.Drawing.Size(64, 22);
-            this.txt_OrderNo.TabIndex = 14;
-            // 
-            // lbl_OrderNo
-            // 
-            this.lbl_OrderNo.AutoSize = true;
-            this.lbl_OrderNo.Location = new System.Drawing.Point(243, 25);
-            this.lbl_OrderNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl_OrderNo.Name = "lbl_OrderNo";
-            this.lbl_OrderNo.Size = new System.Drawing.Size(67, 17);
-            this.lbl_OrderNo.TabIndex = 15;
-            this.lbl_OrderNo.Text = "OrderNo.";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(213, 48);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(265, 22);
-            this.dateTimePicker1.TabIndex = 16;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.dateTimePickerSaleDate.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePickerSaleDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerSaleDate.Location = new System.Drawing.Point(315, 64);
+            this.dateTimePickerSaleDate.Margin = new System.Windows.Forms.Padding(4);
+            this.dateTimePickerSaleDate.Name = "dateTimePickerSaleDate";
+            this.dateTimePickerSaleDate.Size = new System.Drawing.Size(125, 22);
+            this.dateTimePickerSaleDate.TabIndex = 16;
+            this.dateTimePickerSaleDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // btn_OrSave
             // 
@@ -259,7 +219,7 @@
             // lbl_OrDiscount
             // 
             this.lbl_OrDiscount.AutoSize = true;
-            this.lbl_OrDiscount.Location = new System.Drawing.Point(481, 254);
+            this.lbl_OrDiscount.Location = new System.Drawing.Point(481, 217);
             this.lbl_OrDiscount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_OrDiscount.Name = "lbl_OrDiscount";
             this.lbl_OrDiscount.Size = new System.Drawing.Size(63, 17);
@@ -268,26 +228,12 @@
             // 
             // txt_OrDisco
             // 
-            this.txt_OrDisco.Location = new System.Drawing.Point(572, 251);
+            this.txt_OrDisco.Location = new System.Drawing.Point(572, 214);
             this.txt_OrDisco.Margin = new System.Windows.Forms.Padding(4);
             this.txt_OrDisco.Name = "txt_OrDisco";
             this.txt_OrDisco.Size = new System.Drawing.Size(89, 22);
             this.txt_OrDisco.TabIndex = 21;
-            // 
-            // btn_OrderClear
-            // 
-            this.btn_OrderClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btn_OrderClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_OrderClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_OrderClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btn_OrderClear.Location = new System.Drawing.Point(588, 176);
-            this.btn_OrderClear.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_OrderClear.Name = "btn_OrderClear";
-            this.btn_OrderClear.Size = new System.Drawing.Size(73, 28);
-            this.btn_OrderClear.TabIndex = 22;
-            this.btn_OrderClear.Text = "Clear";
-            this.btn_OrderClear.UseVisualStyleBackColor = false;
-            this.btn_OrderClear.Click += new System.EventHandler(this.Btn_OrderClear_Click);
+            this.txt_OrDisco.Text = "0";
             // 
             // btn_OrExit
             // 
@@ -310,23 +256,18 @@
             this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(736, 411);
             this.Controls.Add(this.btn_OrExit);
-            this.Controls.Add(this.btn_OrderClear);
             this.Controls.Add(this.txt_OrDisco);
             this.Controls.Add(this.lbl_OrDiscount);
             this.Controls.Add(this.txt_OrCusName);
             this.Controls.Add(this.lbl_OrCusName);
             this.Controls.Add(this.btn_OrSave);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.lbl_OrderNo);
-            this.Controls.Add(this.txt_OrderNo);
+            this.Controls.Add(this.dateTimePickerSaleDate);
             this.Controls.Add(this.btn_OrClear);
             this.Controls.Add(this.txt_Pri);
             this.Controls.Add(this.lbl_Price);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtOrdetTotal);
-            this.Controls.Add(this.txtOrderGct);
             this.Controls.Add(this.lblOrderTotal);
-            this.Controls.Add(this.lblOrderGct);
             this.Controls.Add(this.lblOrderSubTotal);
             this.Controls.Add(this.numericUpDownQuantity);
             this.Controls.Add(this.txtBoxSubTotal);
@@ -355,23 +296,18 @@
         private System.Windows.Forms.TextBox txtBoxSubTotal;
         private System.Windows.Forms.NumericUpDown numericUpDownQuantity;
         private System.Windows.Forms.Label lblOrderSubTotal;
-        private System.Windows.Forms.Label lblOrderGct;
         private System.Windows.Forms.Label lblOrderTotal;
-        private System.Windows.Forms.TextBox txtOrderGct;
         private System.Windows.Forms.TextBox txtOrdetTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lbl_Price;
         private System.Windows.Forms.TextBox txt_Pri;
         private System.Windows.Forms.Button btn_OrClear;
-        private System.Windows.Forms.TextBox txt_OrderNo;
-        private System.Windows.Forms.Label lbl_OrderNo;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerSaleDate;
         private System.Windows.Forms.Button btn_OrSave;
         private System.Windows.Forms.Label lbl_OrCusName;
         private System.Windows.Forms.TextBox txt_OrCusName;
         private System.Windows.Forms.Label lbl_OrDiscount;
         private System.Windows.Forms.TextBox txt_OrDisco;
-        private System.Windows.Forms.Button btn_OrderClear;
         private System.Windows.Forms.Button btn_OrExit;
     }
 }
