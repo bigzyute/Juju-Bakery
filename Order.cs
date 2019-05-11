@@ -38,8 +38,8 @@ namespace LoginScrn
         private void Btn_OrClear_Click(object sender, EventArgs e)
         {
             txt_Pri.Clear();
-            numericUpDown1.ResetText();
-            lblOrderQuantity.Clear();
+            numericUpDownQuantity.ResetText();
+            txtBoxSubTotal.Clear();
             txt_OrCusName.Clear();
             txtOrderGct.Clear();
             txt_OrDisco.Clear();
@@ -68,6 +68,7 @@ namespace LoginScrn
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            float subtotal = 0;
             string connectionString = @"Data Source=GABRIELLE;Initial Catalog=Bakery; Integrated Security=True;";
             SqlConnection connection = new SqlConnection(connectionString);
             String query = "Select [cost] From ProductsItems Where name='"+listBoxProducts.Text+"'";
@@ -77,6 +78,8 @@ namespace LoginScrn
             while (reader.Read())
             {
                 txt_Pri.Text = reader.GetValue(0).ToString();
+                subtotal = float.Parse(reader.GetValue(0).ToString()) * float.Parse(numericUpDownQuantity.Value.ToString());
+                txtBoxSubTotal.Text = subtotal.ToString();
             }            
         }
 

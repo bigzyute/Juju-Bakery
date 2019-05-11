@@ -32,8 +32,8 @@
             this.listBoxProducts = new System.Windows.Forms.ListBox();
             this.lblOrderProductName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblOrderQuantity = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtBoxSubTotal = new System.Windows.Forms.TextBox();
+            this.numericUpDownQuantity = new System.Windows.Forms.NumericUpDown();
             this.lblOrderSubTotal = new System.Windows.Forms.Label();
             this.lblOrderGct = new System.Windows.Forms.Label();
             this.lblOrderTotal = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
             this.txt_OrDisco = new System.Windows.Forms.TextBox();
             this.btn_OrderClear = new System.Windows.Forms.Button();
             this.btn_OrExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,23 +86,23 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Quantity";
             // 
-            // lblOrderQuantity
+            // txtBoxSubTotal
             // 
-            this.lblOrderQuantity.Location = new System.Drawing.Point(572, 137);
-            this.lblOrderQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblOrderQuantity.Name = "lblOrderQuantity";
-            this.lblOrderQuantity.ReadOnly = true;
-            this.lblOrderQuantity.Size = new System.Drawing.Size(89, 22);
-            this.lblOrderQuantity.TabIndex = 3;
+            this.txtBoxSubTotal.Location = new System.Drawing.Point(572, 137);
+            this.txtBoxSubTotal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtBoxSubTotal.Name = "txtBoxSubTotal";
+            this.txtBoxSubTotal.ReadOnly = true;
+            this.txtBoxSubTotal.Size = new System.Drawing.Size(89, 22);
+            this.txtBoxSubTotal.TabIndex = 3;
             // 
-            // numericUpDown1
+            // numericUpDownQuantity
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(572, 102);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(89, 22);
-            this.numericUpDown1.TabIndex = 4;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
+            this.numericUpDownQuantity.Location = new System.Drawing.Point(572, 102);
+            this.numericUpDownQuantity.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.numericUpDownQuantity.Name = "numericUpDownQuantity";
+            this.numericUpDownQuantity.Size = new System.Drawing.Size(89, 22);
+            this.numericUpDownQuantity.TabIndex = 4;
+            this.numericUpDownQuantity.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
             // 
             // lblOrderSubTotal
             // 
@@ -328,8 +328,8 @@
             this.Controls.Add(this.lblOrderTotal);
             this.Controls.Add(this.lblOrderGct);
             this.Controls.Add(this.lblOrderSubTotal);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.lblOrderQuantity);
+            this.Controls.Add(this.numericUpDownQuantity);
+            this.Controls.Add(this.txtBoxSubTotal);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblOrderProductName);
             this.Controls.Add(this.listBoxProducts);
@@ -340,7 +340,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Order";
             this.Load += new System.EventHandler(this.Order_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -352,8 +352,8 @@
         private System.Windows.Forms.ListBox listBoxProducts;
         private System.Windows.Forms.Label lblOrderProductName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox lblOrderQuantity;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtBoxSubTotal;
+        private System.Windows.Forms.NumericUpDown numericUpDownQuantity;
         private System.Windows.Forms.Label lblOrderSubTotal;
         private System.Windows.Forms.Label lblOrderGct;
         private System.Windows.Forms.Label lblOrderTotal;
