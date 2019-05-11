@@ -22,3 +22,4 @@ D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\J
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.exe
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.pdb
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.addProduct.resources
+D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.ViewEmployeeList.resources
