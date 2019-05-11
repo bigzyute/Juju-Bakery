@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Order));
             this.listBoxProducts = new System.Windows.Forms.ListBox();
             this.lblOrderProductName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,7 +65,7 @@
             "Plantain Tarts",
             "Cheese Cake"});
             this.listBoxProducts.Location = new System.Drawing.Point(236, 83);
-            this.listBoxProducts.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxProducts.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxProducts.Name = "listBoxProducts";
             this.listBoxProducts.Size = new System.Drawing.Size(95, 56);
             this.listBoxProducts.TabIndex = 0;
@@ -93,7 +94,7 @@
             // lblOrderQuantity
             // 
             this.lblOrderQuantity.Location = new System.Drawing.Point(429, 111);
-            this.lblOrderQuantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lblOrderQuantity.Margin = new System.Windows.Forms.Padding(2);
             this.lblOrderQuantity.Name = "lblOrderQuantity";
             this.lblOrderQuantity.ReadOnly = true;
             this.lblOrderQuantity.Size = new System.Drawing.Size(68, 20);
@@ -102,7 +103,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(429, 83);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(67, 20);
             this.numericUpDown1.TabIndex = 4;
@@ -142,7 +143,7 @@
             // txtOrderGct
             // 
             this.txtOrderGct.Location = new System.Drawing.Point(429, 181);
-            this.txtOrderGct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrderGct.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrderGct.Name = "txtOrderGct";
             this.txtOrderGct.ReadOnly = true;
             this.txtOrderGct.Size = new System.Drawing.Size(68, 20);
@@ -151,7 +152,7 @@
             // txtOrdetTotal
             // 
             this.txtOrdetTotal.Location = new System.Drawing.Point(429, 227);
-            this.txtOrdetTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOrdetTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtOrdetTotal.Name = "txtOrdetTotal";
             this.txtOrdetTotal.ReadOnly = true;
             this.txtOrdetTotal.Size = new System.Drawing.Size(68, 20);
@@ -160,9 +161,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 114);
+            this.pictureBox1.Size = new System.Drawing.Size(119, 126);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -309,7 +311,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblOrderProductName);
             this.Controls.Add(this.listBoxProducts);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
