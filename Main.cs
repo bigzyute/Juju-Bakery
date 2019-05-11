@@ -172,25 +172,5 @@ namespace LoginScrn
         {
 
         }
-
-        private void ViewEmployeeListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            bool isOpen = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Text == "ViewEmployeeList")
-                {
-                    isOpen = true;
-                    f.BringToFront();
-                    break;
-                }
-            }
-            if (isOpen == false)
-            {
-                ViewEmployeeList objVEL = new ViewEmployeeList();
-                objVEL.MdiParent = this;
-                objVEL.Show();
-            }
-        }
     }
 }

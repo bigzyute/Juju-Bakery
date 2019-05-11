@@ -96,13 +96,6 @@
             this.removeEmployeeToolStripMenuItem.Text = "Remove Employee";
             this.removeEmployeeToolStripMenuItem.Click += new System.EventHandler(this.RemoveEmployeeToolStripMenuItem_Click);
             // 
-            // viewEmployeeListToolStripMenuItem
-            // 
-            this.viewEmployeeListToolStripMenuItem.Name = "viewEmployeeListToolStripMenuItem";
-            this.viewEmployeeListToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
-            this.viewEmployeeListToolStripMenuItem.Text = "View Employee List";
-            this.viewEmployeeListToolStripMenuItem.Click += new System.EventHandler(this.ViewEmployeeListToolStripMenuItem_Click);
-            // 
             // productsToolStripMenuItem
             // 
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
