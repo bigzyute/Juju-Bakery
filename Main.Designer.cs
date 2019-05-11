@@ -42,7 +42,6 @@
             this.salesReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,8 +55,7 @@
             this.employeeDetailsToolStripMenuItem,
             this.productsToolStripMenuItem,
             this.reportsToolStripMenuItem,
-            this.logoutToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
@@ -117,14 +115,14 @@
             // addNewProductToolStripMenuItem
             // 
             this.addNewProductToolStripMenuItem.Name = "addNewProductToolStripMenuItem";
-            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.addNewProductToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.addNewProductToolStripMenuItem.Text = "Add New Product";
             this.addNewProductToolStripMenuItem.Click += new System.EventHandler(this.addNewProductToolStripMenuItem_Click);
             // 
             // removeProductToolStripMenuItem
             // 
             this.removeProductToolStripMenuItem.Name = "removeProductToolStripMenuItem";
-            this.removeProductToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.removeProductToolStripMenuItem.Size = new System.Drawing.Size(201, 26);
             this.removeProductToolStripMenuItem.Text = "Remove Product";
             this.removeProductToolStripMenuItem.Click += new System.EventHandler(this.removeProductToolStripMenuItem_Click);
             // 
@@ -140,14 +138,14 @@
             // salesReportToolStripMenuItem
             // 
             this.salesReportToolStripMenuItem.Name = "salesReportToolStripMenuItem";
-            this.salesReportToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.salesReportToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.salesReportToolStripMenuItem.Text = "Sales Report";
             this.salesReportToolStripMenuItem.Click += new System.EventHandler(this.SalesReportToolStripMenuItem_Click);
             // 
             // stockReportToolStripMenuItem
             // 
             this.stockReportToolStripMenuItem.Name = "stockReportToolStripMenuItem";
-            this.stockReportToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.stockReportToolStripMenuItem.Size = new System.Drawing.Size(169, 26);
             this.stockReportToolStripMenuItem.Text = "Stock Report";
             this.stockReportToolStripMenuItem.Click += new System.EventHandler(this.StockReportToolStripMenuItem_Click);
             // 
@@ -157,11 +155,6 @@
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(72, 38);
             this.logoutToolStripMenuItem.Text = "Logout ";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.LogoutToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 38);
             // 
             // Main
             // 
@@ -201,7 +194,6 @@
         private System.Windows.Forms.ToolStripMenuItem salesReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockReportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem orderToolStripMenuItem;
     }
 }
