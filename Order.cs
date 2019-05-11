@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LoginScrn
 {
@@ -67,12 +68,32 @@ namespace LoginScrn
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            string connectionString = @"Data Source=GABRIELLE;Initial Catalog=Bakery; Integrated Security=True;";
+            SqlConnection connection = new SqlConnection(connectionString);
+            String query = "Select [cost] From ProductsItems Where name='"+listBoxProducts.Text+"'";
+            connection.Open();
+            SqlCommand cmd = new SqlCommand(query, connection);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                txt_Pri.Text = reader.GetValue(0).ToString();
+            }            
         }
 
         private void Order_Load(object sender, EventArgs e)
         {
-
+            string connectionString = @"Data Source=GABRIELLE;Initial Catalog=Bakery; Integrated Security=True;";
+            SqlConnection connection = new SqlConnection(connectionString);
+            String query = "Select * From ProductsItems";
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+            connection.Open();
+            adapter.Fill(dataTable);
+            foreach (DataRow row in dataTable.Rows)
+            {
+                listBoxProducts.Items.Add(row["name"].ToString());
+            }
+            connection.Close();
         }
     }
 }
