@@ -37,5 +37,10 @@ namespace LoginScrn
             dataGridViewEmployee.DataSource = dataSet;
             dataGridViewEmployee.DataMember = dataSet.Tables[0].ToString();
         }
+
+        private void EmployeeView_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

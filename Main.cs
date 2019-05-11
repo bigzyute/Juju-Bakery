@@ -187,5 +187,28 @@ namespace LoginScrn
                 objEV.Show();
             }
         }
+
+        private void Main_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                notifyIcon1.Icon = SystemIcons.Application;
+                notifyIcon1.BalloonTipText = "Your Form has been minimized";
+                notifyIcon1.ShowBalloonTip(1000);
+            }
+            else if (this.WindowState == FormWindowState.Normal)
+            {
+                notifyIcon1.BalloonTipText = "Form Restored";
+                notifyIcon1.ShowBalloonTip(1000);
+            }
+            
+           
+
+        }
+
+        private void NotifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
     }
 }

@@ -39,18 +39,20 @@
             this.dataGridViewEmployee.AllowUserToAddRows = false;
             this.dataGridViewEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmployee.Location = new System.Drawing.Point(12, 12);
+            this.dataGridViewEmployee.Location = new System.Drawing.Point(9, 10);
+            this.dataGridViewEmployee.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridViewEmployee.Name = "dataGridViewEmployee";
             this.dataGridViewEmployee.ReadOnly = true;
             this.dataGridViewEmployee.RowTemplate.Height = 24;
-            this.dataGridViewEmployee.Size = new System.Drawing.Size(1413, 301);
+            this.dataGridViewEmployee.Size = new System.Drawing.Size(1060, 245);
             this.dataGridViewEmployee.TabIndex = 0;
             // 
             // btnDisplay
             // 
-            this.btnDisplay.Location = new System.Drawing.Point(316, 357);
+            this.btnDisplay.Location = new System.Drawing.Point(237, 290);
+            this.btnDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(201, 59);
+            this.btnDisplay.Size = new System.Drawing.Size(151, 48);
             this.btnDisplay.TabIndex = 1;
             this.btnDisplay.Text = "&Display";
             this.btnDisplay.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(835, 357);
+            this.btnExit.Location = new System.Drawing.Point(626, 290);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(201, 59);
+            this.btnExit.Size = new System.Drawing.Size(151, 48);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -68,16 +71,18 @@
             // 
             // EmployeeView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1437, 450);
+            this.ClientSize = new System.Drawing.Size(1028, 366);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnDisplay);
             this.Controls.Add(this.dataGridViewEmployee);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmployeeView";
             this.Text = "Employee List";
+            this.Load += new System.EventHandler(this.EmployeeView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployee)).EndInit();
             this.ResumeLayout(false);
 
