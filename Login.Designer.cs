@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lblUserName = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtboxUserName = new System.Windows.Forms.TextBox();
@@ -36,13 +37,15 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.pictureBoxLogon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogon)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserName
             // 
             this.lblUserName.AutoSize = true;
             this.lblUserName.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserName.Location = new System.Drawing.Point(190, 123);
+            this.lblUserName.Location = new System.Drawing.Point(63, 169);
             this.lblUserName.Name = "lblUserName";
             this.lblUserName.Size = new System.Drawing.Size(126, 33);
             this.lblUserName.TabIndex = 0;
@@ -53,7 +56,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(190, 199);
+            this.lblPassword.Location = new System.Drawing.Point(63, 221);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(115, 33);
             this.lblPassword.TabIndex = 1;
@@ -61,7 +64,7 @@
             // 
             // txtboxUserName
             // 
-            this.txtboxUserName.Location = new System.Drawing.Point(365, 130);
+            this.txtboxUserName.Location = new System.Drawing.Point(238, 176);
             this.txtboxUserName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxUserName.Name = "txtboxUserName";
             this.txtboxUserName.Size = new System.Drawing.Size(146, 22);
@@ -69,7 +72,7 @@
             // 
             // txtboxPassword
             // 
-            this.txtboxPassword.Location = new System.Drawing.Point(365, 206);
+            this.txtboxPassword.Location = new System.Drawing.Point(238, 228);
             this.txtboxPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
@@ -79,10 +82,10 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe Script", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(247, 22);
+            this.lblTitle.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(70, 43);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(180, 57);
+            this.lblTitle.Size = new System.Drawing.Size(314, 99);
             this.lblTitle.TabIndex = 4;
             this.lblTitle.Text = "Welcome";
             // 
@@ -122,13 +125,24 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.BtnExit_Click);
             // 
+            // pictureBoxLogon
+            // 
+            this.pictureBoxLogon.BackgroundImage = global::LoginScrn.Properties.Resources.logon2;
+            this.pictureBoxLogon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxLogon.Location = new System.Drawing.Point(435, 24);
+            this.pictureBoxLogon.Name = "pictureBoxLogon";
+            this.pictureBoxLogon.Size = new System.Drawing.Size(304, 260);
+            this.pictureBoxLogon.TabIndex = 8;
+            this.pictureBoxLogon.TabStop = false;
+            // 
             // Login
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(751, 386);
+            this.ClientSize = new System.Drawing.Size(765, 386);
+            this.Controls.Add(this.pictureBoxLogon);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLogin);
@@ -138,13 +152,15 @@
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Log In";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +176,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBoxLogon;
     }
 }
 

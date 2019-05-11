@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Image\MainBackground.jpg" />
+    <None Include="images\logon2.png" />
     <Content Include="productsItemsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>productsItemsModel.edmx</DependentUpon>
