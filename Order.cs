@@ -41,7 +41,7 @@ namespace LoginScrn
             numericUpDownQuantity.ResetText();
             txtBoxSubTotal.Clear();
             txt_OrCusName.Clear();
-            txt_OrDisco.Clear();
+            txt_OrDisco.Text = 0.ToString();
             txtOrdetTotal.Clear();
         }
 

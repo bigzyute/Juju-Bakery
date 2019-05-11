@@ -32,6 +32,8 @@ namespace LoginScrn
 
         private void BtnRemoveProduct_Click(object sender, EventArgs e)
         {
+
+
             using (BakeryEntitiesNew context = new BakeryEntitiesNew())
             {
                 ProductsItem productsItem = context.ProductsItems.FirstOrDefault(p => p.Id.ToString() == txt_removeProductCode.Text);
