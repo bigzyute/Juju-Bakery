@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sales_Report));
             this.lblSalesReportStartDate = new System.Windows.Forms.Label();
             this.lblSalesReportEndDate = new System.Windows.Forms.Label();
             this.dateTimePickerSR = new System.Windows.Forms.DateTimePicker();
@@ -36,10 +37,10 @@
             this.btnCancelSalesReport = new System.Windows.Forms.Button();
             this.btnExitSalesReport = new System.Windows.Forms.Button();
             this.gbSRDisplay = new System.Windows.Forms.GroupBox();
-            this.lblNumSales = new System.Windows.Forms.Label();
-            this.lblItemsSold = new System.Windows.Forms.Label();
-            this.txtNumSalesDisp = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNumSalesDisp = new System.Windows.Forms.TextBox();
+            this.lblItemsSold = new System.Windows.Forms.Label();
+            this.lblNumSales = new System.Windows.Forms.Label();
             this.gbSRDisplay.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -123,14 +124,19 @@
             this.gbSRDisplay.TabStop = false;
             this.gbSRDisplay.Text = "Display";
             // 
-            // lblNumSales
+            // textBox1
             // 
-            this.lblNumSales.AutoSize = true;
-            this.lblNumSales.Location = new System.Drawing.Point(14, 26);
-            this.lblNumSales.Name = "lblNumSales";
-            this.lblNumSales.Size = new System.Drawing.Size(85, 13);
-            this.lblNumSales.TabIndex = 0;
-            this.lblNumSales.Text = "Number of Sales";
+            this.textBox1.Location = new System.Drawing.Point(157, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 4;
+            // 
+            // txtNumSalesDisp
+            // 
+            this.txtNumSalesDisp.Location = new System.Drawing.Point(17, 57);
+            this.txtNumSalesDisp.Name = "txtNumSalesDisp";
+            this.txtNumSalesDisp.Size = new System.Drawing.Size(82, 20);
+            this.txtNumSalesDisp.TabIndex = 3;
             // 
             // lblItemsSold
             // 
@@ -141,19 +147,14 @@
             this.lblItemsSold.TabIndex = 2;
             this.lblItemsSold.Text = "Items Sold";
             // 
-            // txtNumSalesDisp
+            // lblNumSales
             // 
-            this.txtNumSalesDisp.Location = new System.Drawing.Point(17, 57);
-            this.txtNumSalesDisp.Name = "txtNumSalesDisp";
-            this.txtNumSalesDisp.Size = new System.Drawing.Size(82, 20);
-            this.txtNumSalesDisp.TabIndex = 3;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(157, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.lblNumSales.AutoSize = true;
+            this.lblNumSales.Location = new System.Drawing.Point(14, 26);
+            this.lblNumSales.Name = "lblNumSales";
+            this.lblNumSales.Size = new System.Drawing.Size(85, 13);
+            this.lblNumSales.TabIndex = 0;
+            this.lblNumSales.Text = "Number of Sales";
             // 
             // Sales_Report
             // 
@@ -169,11 +170,12 @@
             this.Controls.Add(this.lblSalesReportEndDate);
             this.Controls.Add(this.lblSalesReportStartDate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Sales_Report";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SalesReport";
+            this.Text = "Sales Report";
             this.gbSRDisplay.ResumeLayout(false);
             this.gbSRDisplay.PerformLayout();
             this.ResumeLayout(false);

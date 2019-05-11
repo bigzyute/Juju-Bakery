@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemoveProduct));
             this.lblRPTitle = new System.Windows.Forms.Label();
             this.lblRemoveProductCode = new System.Windows.Forms.Label();
             this.txt_removeProductCode = new System.Windows.Forms.TextBox();
@@ -63,7 +64,7 @@
             // txt_removeProductCode
             // 
             this.txt_removeProductCode.Location = new System.Drawing.Point(141, 83);
-            this.txt_removeProductCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_removeProductCode.Margin = new System.Windows.Forms.Padding(2);
             this.txt_removeProductCode.Name = "txt_removeProductCode";
             this.txt_removeProductCode.Size = new System.Drawing.Size(156, 20);
             this.txt_removeProductCode.TabIndex = 2;
@@ -71,7 +72,7 @@
             // txt_removeProductResult
             // 
             this.txt_removeProductResult.Location = new System.Drawing.Point(141, 135);
-            this.txt_removeProductResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_removeProductResult.Margin = new System.Windows.Forms.Padding(2);
             this.txt_removeProductResult.Name = "txt_removeProductResult";
             this.txt_removeProductResult.ReadOnly = true;
             this.txt_removeProductResult.Size = new System.Drawing.Size(156, 20);
@@ -80,7 +81,7 @@
             // btnRemoveProductSearch
             // 
             this.btnRemoveProductSearch.Location = new System.Drawing.Point(340, 80);
-            this.btnRemoveProductSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveProductSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductSearch.Name = "btnRemoveProductSearch";
             this.btnRemoveProductSearch.Size = new System.Drawing.Size(62, 24);
             this.btnRemoveProductSearch.TabIndex = 5;
@@ -101,7 +102,7 @@
             // btnRemoveProductDelete
             // 
             this.btnRemoveProductDelete.Location = new System.Drawing.Point(340, 132);
-            this.btnRemoveProductDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveProductDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductDelete.Name = "btnRemoveProductDelete";
             this.btnRemoveProductDelete.Size = new System.Drawing.Size(62, 24);
             this.btnRemoveProductDelete.TabIndex = 7;
@@ -112,7 +113,7 @@
             // btnRemoveProduct
             // 
             this.btnRemoveProduct.Location = new System.Drawing.Point(80, 226);
-            this.btnRemoveProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProduct.Name = "btnRemoveProduct";
             this.btnRemoveProduct.Size = new System.Drawing.Size(167, 27);
             this.btnRemoveProduct.TabIndex = 8;
@@ -123,7 +124,7 @@
             // btnRemoveProductExit
             // 
             this.btnRemoveProductExit.Location = new System.Drawing.Point(293, 226);
-            this.btnRemoveProductExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRemoveProductExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductExit.Name = "btnRemoveProductExit";
             this.btnRemoveProductExit.Size = new System.Drawing.Size(142, 27);
             this.btnRemoveProductExit.TabIndex = 10;
@@ -147,11 +148,12 @@
             this.Controls.Add(this.lblRemoveProductCode);
             this.Controls.Add(this.lblRPTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "RemoveProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RemoveProduct";
+            this.Text = "Remove Product";
             this.ResumeLayout(false);
             this.PerformLayout();
 

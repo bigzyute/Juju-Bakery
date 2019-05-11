@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockReport));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.lbl_StockRepStartDate = new System.Windows.Forms.Label();
@@ -36,10 +37,10 @@
             this.btn_StockRepCancel = new System.Windows.Forms.Button();
             this.btn_StockRepExit = new System.Windows.Forms.Button();
             this.gbDisplayStockReport = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtItemAmount = new System.Windows.Forms.TextBox();
             this.txtItemName = new System.Windows.Forms.TextBox();
+            this.txtItemAmount = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbDisplayStockReport.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -116,14 +117,19 @@
             this.gbDisplayStockReport.TabStop = false;
             this.gbDisplayStockReport.Text = "Display";
             // 
-            // label1
+            // txtItemName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Item Amount";
+            this.txtItemName.Location = new System.Drawing.Point(170, 60);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.Size = new System.Drawing.Size(100, 20);
+            this.txtItemName.TabIndex = 3;
+            // 
+            // txtItemAmount
+            // 
+            this.txtItemAmount.Location = new System.Drawing.Point(21, 60);
+            this.txtItemAmount.Name = "txtItemAmount";
+            this.txtItemAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtItemAmount.TabIndex = 2;
             // 
             // label2
             // 
@@ -134,19 +140,14 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Item Name";
             // 
-            // txtItemAmount
+            // label1
             // 
-            this.txtItemAmount.Location = new System.Drawing.Point(21, 60);
-            this.txtItemAmount.Name = "txtItemAmount";
-            this.txtItemAmount.Size = new System.Drawing.Size(100, 20);
-            this.txtItemAmount.TabIndex = 2;
-            // 
-            // txtItemName
-            // 
-            this.txtItemName.Location = new System.Drawing.Point(170, 60);
-            this.txtItemName.Name = "txtItemName";
-            this.txtItemName.Size = new System.Drawing.Size(100, 20);
-            this.txtItemName.TabIndex = 3;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(28, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Item Amount";
             // 
             // StockReport
             // 
@@ -161,6 +162,8 @@
             this.Controls.Add(this.lbl_StockRepStartDate);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StockReport";
