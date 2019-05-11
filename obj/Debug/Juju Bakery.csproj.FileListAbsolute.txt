@@ -8,7 +8,6 @@ D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\bin\Debug\E
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\Juju Bakery.csprojAssemblyReference.cache
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.AddCustomer.resources
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.AddEmployee.resources
-D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.s.resources
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.Login.resources
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.Main.resources
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.Order.resources
@@ -22,3 +21,4 @@ D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\J
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\Juju Bakery.csproj.CopyComplete
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.exe
 D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.pdb
+D:\Documents\School Work\Enterprise Dev\JuJuBakery\New folder - Copy\obj\Debug\LoginScrn.addProduct.resources
