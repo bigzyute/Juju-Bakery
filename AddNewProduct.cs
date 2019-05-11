@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LoginScrn
 {
-    public partial class s : Form
+    public partial class addProduct : Form
     {
-        public s()
+        public addProduct()
         {
             InitializeComponent();
         }

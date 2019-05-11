@@ -62,7 +62,7 @@ namespace LoginScrn
             }
             if (isOpen == false)
             {
-                s objANP = new s();
+                addProduct objANP = new addProduct();
                 objANP.MdiParent = this;
                 objANP.Show();
             }
