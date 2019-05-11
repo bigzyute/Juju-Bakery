@@ -47,6 +47,7 @@
             // 
             // gbProductInfo
             // 
+            this.gbProductInfo.BackColor = System.Drawing.Color.LightGray;
             this.gbProductInfo.Controls.Add(this.textBoxCost);
             this.gbProductInfo.Controls.Add(this.textBoxProductName);
             this.gbProductInfo.Controls.Add(this.textBoxProductCode);
@@ -54,9 +55,9 @@
             this.gbProductInfo.Controls.Add(this.lblProductName);
             this.gbProductInfo.Controls.Add(this.lblProductCode);
             this.gbProductInfo.Location = new System.Drawing.Point(305, 11);
-            this.gbProductInfo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProductInfo.Margin = new System.Windows.Forms.Padding(2);
             this.gbProductInfo.Name = "gbProductInfo";
-            this.gbProductInfo.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbProductInfo.Padding = new System.Windows.Forms.Padding(2);
             this.gbProductInfo.Size = new System.Drawing.Size(217, 213);
             this.gbProductInfo.TabIndex = 0;
             this.gbProductInfo.TabStop = false;
@@ -65,7 +66,7 @@
             // textBoxCost
             // 
             this.textBoxCost.Location = new System.Drawing.Point(88, 86);
-            this.textBoxCost.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxCost.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxCost.Name = "textBoxCost";
             this.textBoxCost.Size = new System.Drawing.Size(116, 20);
             this.textBoxCost.TabIndex = 5;
@@ -73,7 +74,7 @@
             // textBoxProductName
             // 
             this.textBoxProductName.Location = new System.Drawing.Point(88, 54);
-            this.textBoxProductName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxProductName.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxProductName.Name = "textBoxProductName";
             this.textBoxProductName.Size = new System.Drawing.Size(116, 20);
             this.textBoxProductName.TabIndex = 4;
@@ -81,7 +82,7 @@
             // textBoxProductCode
             // 
             this.textBoxProductCode.Location = new System.Drawing.Point(88, 23);
-            this.textBoxProductCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxProductCode.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxProductCode.Name = "textBoxProductCode";
             this.textBoxProductCode.ReadOnly = true;
             this.textBoxProductCode.Size = new System.Drawing.Size(116, 20);
@@ -119,39 +120,49 @@
             // 
             // btnAddProduct
             // 
+            this.btnAddProduct.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAddProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddProduct.Location = new System.Drawing.Point(59, 259);
-            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddProduct.Name = "btnAddProduct";
             this.btnAddProduct.Size = new System.Drawing.Size(55, 25);
             this.btnAddProduct.TabIndex = 1;
             this.btnAddProduct.Text = "Add";
-            this.btnAddProduct.UseVisualStyleBackColor = true;
+            this.btnAddProduct.UseVisualStyleBackColor = false;
             this.btnAddProduct.Click += new System.EventHandler(this.BtnAddProduct_Click);
             // 
             // btnCancelProduct
             // 
+            this.btnCancelProduct.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCancelProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelProduct.Location = new System.Drawing.Point(249, 259);
-            this.btnCancelProduct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelProduct.Name = "btnCancelProduct";
             this.btnCancelProduct.Size = new System.Drawing.Size(57, 25);
             this.btnCancelProduct.TabIndex = 2;
             this.btnCancelProduct.Text = "Cancel";
-            this.btnCancelProduct.UseVisualStyleBackColor = true;
+            this.btnCancelProduct.UseVisualStyleBackColor = false;
             // 
             // btnProductExit
             // 
+            this.btnProductExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnProductExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnProductExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductExit.Location = new System.Drawing.Point(429, 259);
-            this.btnProductExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductExit.Name = "btnProductExit";
             this.btnProductExit.Size = new System.Drawing.Size(57, 25);
             this.btnProductExit.TabIndex = 3;
             this.btnProductExit.Text = "Exit";
-            this.btnProductExit.UseVisualStyleBackColor = true;
+            this.btnProductExit.UseVisualStyleBackColor = false;
             this.btnProductExit.Click += new System.EventHandler(this.btnProductExit_Click);
             // 
             // pictureBoxAddProduct
             // 
             this.pictureBoxAddProduct.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBoxAddProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxAddProduct.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAddProduct.Image")));
             this.pictureBoxAddProduct.Location = new System.Drawing.Point(12, 11);
             this.pictureBoxAddProduct.Name = "pictureBoxAddProduct";
@@ -172,6 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.dateTimePickerAddProduct);
             this.Controls.Add(this.pictureBoxAddProduct);
@@ -181,7 +193,7 @@
             this.Controls.Add(this.gbProductInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "addProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

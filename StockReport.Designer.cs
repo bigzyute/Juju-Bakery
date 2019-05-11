@@ -78,34 +78,44 @@
             // 
             // btn_StockRepGenRep
             // 
+            this.btn_StockRepGenRep.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_StockRepGenRep.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StockRepGenRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StockRepGenRep.Location = new System.Drawing.Point(46, 279);
             this.btn_StockRepGenRep.Name = "btn_StockRepGenRep";
             this.btn_StockRepGenRep.Size = new System.Drawing.Size(121, 23);
             this.btn_StockRepGenRep.TabIndex = 4;
             this.btn_StockRepGenRep.Text = "Generate Report";
-            this.btn_StockRepGenRep.UseVisualStyleBackColor = true;
+            this.btn_StockRepGenRep.UseVisualStyleBackColor = false;
             // 
             // btn_StockRepCancel
             // 
+            this.btn_StockRepCancel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_StockRepCancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StockRepCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StockRepCancel.Location = new System.Drawing.Point(216, 279);
             this.btn_StockRepCancel.Name = "btn_StockRepCancel";
             this.btn_StockRepCancel.Size = new System.Drawing.Size(75, 23);
             this.btn_StockRepCancel.TabIndex = 5;
             this.btn_StockRepCancel.Text = "Cancel";
-            this.btn_StockRepCancel.UseVisualStyleBackColor = true;
+            this.btn_StockRepCancel.UseVisualStyleBackColor = false;
             // 
             // btn_StockRepExit
             // 
+            this.btn_StockRepExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_StockRepExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_StockRepExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_StockRepExit.Location = new System.Drawing.Point(346, 279);
             this.btn_StockRepExit.Name = "btn_StockRepExit";
             this.btn_StockRepExit.Size = new System.Drawing.Size(75, 23);
             this.btn_StockRepExit.TabIndex = 6;
             this.btn_StockRepExit.Text = "Exit ";
-            this.btn_StockRepExit.UseVisualStyleBackColor = true;
+            this.btn_StockRepExit.UseVisualStyleBackColor = false;
             this.btn_StockRepExit.Click += new System.EventHandler(this.Btn_StockRepExit_Click);
             // 
             // gbDisplayStockReport
             // 
+            this.gbDisplayStockReport.BackColor = System.Drawing.Color.LightGray;
             this.gbDisplayStockReport.Controls.Add(this.txtItemName);
             this.gbDisplayStockReport.Controls.Add(this.txtItemAmount);
             this.gbDisplayStockReport.Controls.Add(this.label2);
@@ -153,6 +163,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(554, 334);
             this.Controls.Add(this.gbDisplayStockReport);
             this.Controls.Add(this.btn_StockRepExit);

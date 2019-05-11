@@ -80,13 +80,16 @@
             // 
             // btnRemoveProductSearch
             // 
+            this.btnRemoveProductSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRemoveProductSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveProductSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveProductSearch.Location = new System.Drawing.Point(340, 80);
             this.btnRemoveProductSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductSearch.Name = "btnRemoveProductSearch";
             this.btnRemoveProductSearch.Size = new System.Drawing.Size(62, 24);
             this.btnRemoveProductSearch.TabIndex = 5;
             this.btnRemoveProductSearch.Text = "&Search";
-            this.btnRemoveProductSearch.UseVisualStyleBackColor = true;
+            this.btnRemoveProductSearch.UseVisualStyleBackColor = false;
             this.btnRemoveProductSearch.Click += new System.EventHandler(this.BtnRemoveProductSearch_Click);
             // 
             // lblRemoveProductResult
@@ -101,35 +104,44 @@
             // 
             // btnRemoveProductDelete
             // 
+            this.btnRemoveProductDelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRemoveProductDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveProductDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveProductDelete.Location = new System.Drawing.Point(340, 132);
             this.btnRemoveProductDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductDelete.Name = "btnRemoveProductDelete";
             this.btnRemoveProductDelete.Size = new System.Drawing.Size(62, 24);
             this.btnRemoveProductDelete.TabIndex = 7;
             this.btnRemoveProductDelete.Text = "&Clear";
-            this.btnRemoveProductDelete.UseVisualStyleBackColor = true;
+            this.btnRemoveProductDelete.UseVisualStyleBackColor = false;
             this.btnRemoveProductDelete.Click += new System.EventHandler(this.BtnRemoveProductDelete_Click);
             // 
             // btnRemoveProduct
             // 
+            this.btnRemoveProduct.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRemoveProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveProduct.Location = new System.Drawing.Point(80, 226);
             this.btnRemoveProduct.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProduct.Name = "btnRemoveProduct";
             this.btnRemoveProduct.Size = new System.Drawing.Size(167, 27);
             this.btnRemoveProduct.TabIndex = 8;
             this.btnRemoveProduct.Text = "&Remove Product";
-            this.btnRemoveProduct.UseVisualStyleBackColor = true;
+            this.btnRemoveProduct.UseVisualStyleBackColor = false;
             this.btnRemoveProduct.Click += new System.EventHandler(this.BtnRemoveProduct_Click);
             // 
             // btnRemoveProductExit
             // 
+            this.btnRemoveProductExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnRemoveProductExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRemoveProductExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveProductExit.Location = new System.Drawing.Point(293, 226);
             this.btnRemoveProductExit.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemoveProductExit.Name = "btnRemoveProductExit";
             this.btnRemoveProductExit.Size = new System.Drawing.Size(142, 27);
             this.btnRemoveProductExit.TabIndex = 10;
             this.btnRemoveProductExit.Text = "E&xit";
-            this.btnRemoveProductExit.UseVisualStyleBackColor = true;
+            this.btnRemoveProductExit.UseVisualStyleBackColor = false;
             this.btnRemoveProductExit.Click += new System.EventHandler(this.btnRemoveProductExit_Click);
             // 
             // RemoveProduct
@@ -137,6 +149,7 @@
             this.AcceptButton = this.btnRemoveProduct;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(536, 298);
             this.Controls.Add(this.btnRemoveProductExit);
             this.Controls.Add(this.btnRemoveProduct);

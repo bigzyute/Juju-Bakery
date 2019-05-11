@@ -161,6 +161,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -187,12 +188,15 @@
             // 
             // btn_OrClear
             // 
+            this.btn_OrClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_OrClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OrClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OrClear.Location = new System.Drawing.Point(247, 273);
             this.btn_OrClear.Name = "btn_OrClear";
             this.btn_OrClear.Size = new System.Drawing.Size(55, 23);
             this.btn_OrClear.TabIndex = 13;
             this.btn_OrClear.Text = "Clear";
-            this.btn_OrClear.UseVisualStyleBackColor = true;
+            this.btn_OrClear.UseVisualStyleBackColor = false;
             this.btn_OrClear.Click += new System.EventHandler(this.Btn_OrClear_Click);
             // 
             // txt_OrderNo
@@ -222,12 +226,15 @@
             // 
             // btn_OrSave
             // 
+            this.btn_OrSave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_OrSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OrSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OrSave.Location = new System.Drawing.Point(147, 273);
             this.btn_OrSave.Name = "btn_OrSave";
             this.btn_OrSave.Size = new System.Drawing.Size(75, 23);
             this.btn_OrSave.TabIndex = 17;
             this.btn_OrSave.Text = "Save";
-            this.btn_OrSave.UseVisualStyleBackColor = true;
+            this.btn_OrSave.UseVisualStyleBackColor = false;
             this.btn_OrSave.Click += new System.EventHandler(this.Btn_OrSave_Click);
             // 
             // lbl_OrCusName
@@ -264,28 +271,36 @@
             // 
             // btn_OrderClear
             // 
-            this.btn_OrderClear.Location = new System.Drawing.Point(454, 143);
+            this.btn_OrderClear.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_OrderClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OrderClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_OrderClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btn_OrderClear.Location = new System.Drawing.Point(441, 143);
             this.btn_OrderClear.Name = "btn_OrderClear";
-            this.btn_OrderClear.Size = new System.Drawing.Size(42, 23);
+            this.btn_OrderClear.Size = new System.Drawing.Size(55, 23);
             this.btn_OrderClear.TabIndex = 22;
             this.btn_OrderClear.Text = "Clear";
-            this.btn_OrderClear.UseVisualStyleBackColor = true;
+            this.btn_OrderClear.UseVisualStyleBackColor = false;
             this.btn_OrderClear.Click += new System.EventHandler(this.Btn_OrderClear_Click);
             // 
             // btn_OrExit
             // 
+            this.btn_OrExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btn_OrExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_OrExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OrExit.Location = new System.Drawing.Point(333, 273);
             this.btn_OrExit.Name = "btn_OrExit";
             this.btn_OrExit.Size = new System.Drawing.Size(75, 23);
             this.btn_OrExit.TabIndex = 23;
             this.btn_OrExit.Text = "Exit";
-            this.btn_OrExit.UseVisualStyleBackColor = true;
+            this.btn_OrExit.UseVisualStyleBackColor = false;
             this.btn_OrExit.Click += new System.EventHandler(this.Btn_OrExit_Click);
             // 
             // Order
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(552, 334);
             this.Controls.Add(this.btn_OrExit);
             this.Controls.Add(this.btn_OrderClear);
@@ -317,6 +332,7 @@
             this.Name = "Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Order";
+            this.Load += new System.EventHandler(this.Order_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

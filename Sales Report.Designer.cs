@@ -82,37 +82,47 @@
             // 
             // btnGenerateSalesReport
             // 
-            this.btnGenerateSalesReport.Location = new System.Drawing.Point(66, 253);
+            this.btnGenerateSalesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnGenerateSalesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGenerateSalesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGenerateSalesReport.Location = new System.Drawing.Point(61, 253);
             this.btnGenerateSalesReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerateSalesReport.Name = "btnGenerateSalesReport";
             this.btnGenerateSalesReport.Size = new System.Drawing.Size(101, 28);
             this.btnGenerateSalesReport.TabIndex = 4;
             this.btnGenerateSalesReport.Text = "Generate Report";
-            this.btnGenerateSalesReport.UseVisualStyleBackColor = true;
+            this.btnGenerateSalesReport.UseVisualStyleBackColor = false;
             // 
             // btnCancelSalesReport
             // 
+            this.btnCancelSalesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCancelSalesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelSalesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelSalesReport.Location = new System.Drawing.Point(235, 253);
             this.btnCancelSalesReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelSalesReport.Name = "btnCancelSalesReport";
             this.btnCancelSalesReport.Size = new System.Drawing.Size(63, 28);
             this.btnCancelSalesReport.TabIndex = 5;
             this.btnCancelSalesReport.Text = "Cancel";
-            this.btnCancelSalesReport.UseVisualStyleBackColor = true;
+            this.btnCancelSalesReport.UseVisualStyleBackColor = false;
             // 
             // btnExitSalesReport
             // 
+            this.btnExitSalesReport.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnExitSalesReport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnExitSalesReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExitSalesReport.Location = new System.Drawing.Point(367, 253);
             this.btnExitSalesReport.Margin = new System.Windows.Forms.Padding(2);
             this.btnExitSalesReport.Name = "btnExitSalesReport";
             this.btnExitSalesReport.Size = new System.Drawing.Size(59, 28);
             this.btnExitSalesReport.TabIndex = 6;
             this.btnExitSalesReport.Text = "Exit";
-            this.btnExitSalesReport.UseVisualStyleBackColor = true;
+            this.btnExitSalesReport.UseVisualStyleBackColor = false;
             this.btnExitSalesReport.Click += new System.EventHandler(this.btnExitSalesReport_Click);
             // 
             // gbSRDisplay
             // 
+            this.gbSRDisplay.BackColor = System.Drawing.Color.Gainsboro;
             this.gbSRDisplay.Controls.Add(this.textBox1);
             this.gbSRDisplay.Controls.Add(this.txtNumSalesDisp);
             this.gbSRDisplay.Controls.Add(this.lblItemsSold);
@@ -160,6 +170,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.gbSRDisplay);
             this.Controls.Add(this.btnExitSalesReport);
