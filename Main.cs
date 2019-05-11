@@ -14,6 +14,7 @@ namespace LoginScrn
     {
         public Main()
         {
+           
             InitializeComponent();
         }
 

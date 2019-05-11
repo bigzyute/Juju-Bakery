@@ -161,6 +161,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RemoveCustomer.resx">
       <DependentUpon>RemoveCustomer.cs</DependentUpon>
@@ -199,6 +200,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Image\MainBackground.jpg" />
     <Content Include="productsItemsModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>productsItemsModel.edmx</DependentUpon>
@@ -209,6 +211,9 @@
       <DependentUpon>productsItemsModel.edmx</DependentUpon>
       <LastGenOutput>productsItemsModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\alex-loup-579543-unsplash.jpg" />
+    <None Include="Resources\markus-spiske-1439874-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
