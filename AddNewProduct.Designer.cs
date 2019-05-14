@@ -198,6 +198,7 @@
             this.Name = "addProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Product";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             this.gbProductInfo.ResumeLayout(false);
             this.gbProductInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAddProduct)).EndInit();
